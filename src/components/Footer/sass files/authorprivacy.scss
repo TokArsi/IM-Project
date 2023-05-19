@@ -1,0 +1,54 @@
+.author-privacy-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-top: 36px;
+  .authors{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    .developers{
+      white-space: nowrap;
+      font-family: 'Proxima Nova', serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+      opacity: 0.6;
+      padding-bottom: 1px;
+    }
+    .designers{
+      font-family: 'Proxima Nova', serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+      opacity: 0.6;
+    }
+  }
+  .privacy{
+    display: flex;
+    .year{
+      font-family: 'Proxima Nova', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+      opacity: 0.7;
+      padding-right: 10px;
+    }
+    .privacy-policy{
+      font-family: 'Proxima Nova', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      text-decoration-line: underline;
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+  }
+}

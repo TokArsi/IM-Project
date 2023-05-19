@@ -1,0 +1,52 @@
+.profession-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-top: 32px;
+}
+.profession-wrapper .profession-question {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+.profession-wrapper .profession-information {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 15px;
+}
+.profession-wrapper .profession-test .test-link {
+  max-width: fit-content;
+  display: flex;
+  background: #00529B;
+  border-radius: 53.2127px;
+  justify-content: center;
+  margin-right: 121px;
+  align-items: center;
+}
+.profession-wrapper .profession-test .test-link a {
+  text-decoration: none;
+  outline: none;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.9638px;
+  line-height: 19px;
+  color: #FFFFFF;
+  align-self: center;
+  padding: 9px 10px 9px 13.85px;
+  white-space: nowrap;
+}
+.profession-wrapper .profession-test .test-link img {
+  align-self: center;
+  padding-right: 13.85px;
+}
+
+/*# sourceMappingURL=choosingprofession.css.map */

@@ -1,0 +1,25 @@
+.navbar-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  .navbar-list-item{
+    display: flex;
+    img{
+      width: 22.35px;
+      height: 22.35px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+    .navbar-list-item-text{
+      padding-left: 15px;
+      font-family: 'Proxima Nova', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      white-space: nowrap;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}

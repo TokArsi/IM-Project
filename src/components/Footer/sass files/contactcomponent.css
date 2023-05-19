@@ -1,0 +1,27 @@
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-top: 36px;
+}
+.contact-wrapper .contact-block {
+  display: flex;
+  padding-bottom: 20px;
+}
+.contact-wrapper .contact-block div {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+.contact-wrapper .contact-block img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+/*# sourceMappingURL=contactcomponent.css.map */

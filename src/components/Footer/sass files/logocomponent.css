@@ -1,0 +1,34 @@
+.logo-wrapper {
+  display: flex;
+  padding-top: 32px;
+}
+.logo-wrapper .logos {
+  display: flex;
+}
+.logo-wrapper .logos img {
+  width: 50.37px;
+  height: 50.37px;
+  padding-right: 10px;
+}
+.logo-wrapper .university-info {
+  display: flex;
+  flex-direction: column;
+}
+.logo-wrapper .university-info .university-title {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.logo-wrapper .university-info .institute-title {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*# sourceMappingURL=logocomponent.css.map */

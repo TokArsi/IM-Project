@@ -1,0 +1,24 @@
+.header-navbar-block {
+  display: flex;
+  flex-direction: column;
+  background: rgba(147, 145, 254, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  box-shadow: 0 3.54751px 26.6063px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  border-radius: 17.7376px;
+  max-width: fit-content;
+}
+.header-navbar-block .header-navbar-content {
+  padding: 20px 30px;
+}
+.header-navbar-block .header-navbar-block-title {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.2532px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=headernavbar.css.map */

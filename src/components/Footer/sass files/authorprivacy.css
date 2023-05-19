@@ -1,0 +1,56 @@
+.author-privacy-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-top: 36px;
+}
+.author-privacy-wrapper .authors {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.author-privacy-wrapper .authors .developers {
+  white-space: nowrap;
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  padding-bottom: 1px;
+}
+.author-privacy-wrapper .authors .designers {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.author-privacy-wrapper .privacy {
+  display: flex;
+}
+.author-privacy-wrapper .privacy .year {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  padding-right: 10px;
+}
+.author-privacy-wrapper .privacy .privacy-policy {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=authorprivacy.css.map */
