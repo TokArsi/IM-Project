@@ -5,6 +5,7 @@
 }
 .navbar-list .navbar-list-item {
   display: flex;
+  padding-bottom: 10px;
 }
 .navbar-list .navbar-list-item img {
   width: 22.35px;

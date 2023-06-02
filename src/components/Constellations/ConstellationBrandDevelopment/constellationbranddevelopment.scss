@@ -1,0 +1,77 @@
+.brand-development-constellation{
+  display: flex;
+  flex-direction: column;
+  width: 32.1%;
+  height: 29.2%;
+  .title{
+    font-family: 'Proxima Nova', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-bottom: 3.98px;
+  }
+  .sub-title{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+  .constellation{
+    position: relative;
+    .influence-marketer{
+      position: absolute;
+      top: 130.67px;
+      left: 61.26px;
+      .star-influence-marketer{
+      }
+    }
+    .business-developer{
+      position: absolute;
+      top: 39.94px;
+      left: 157.65px;
+      .star-business-developer{
+      }
+    }
+    .line{
+      position: absolute;
+      top: 50.51px;
+      left: 71.63px;
+    }
+    .line-2{
+      position: absolute;
+      top: 44.75px;
+      left: 168.42px;
+    }
+    .brand-strategic{
+      position: absolute;
+      top: 33.4px;
+      left: 227.52px;
+    }
+    .line-3{
+      position: absolute;
+      top: 45.64px;
+      left: 236.56px;
+    }
+    .line-4{
+      position: absolute;
+      top: 30.34px;
+      left: 236.56px;
+    }
+    .brand-manager{
+      position: absolute;
+      top: 19.05px;
+      left: 397.76px;
+    }
+    .reputation-brand{
+      position: absolute;
+      top: 95.59px;
+      left: 322.98px;
+    }
+
+  }
+
+}
