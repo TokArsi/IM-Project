@@ -1,0 +1,99 @@
+.advert-creative-constellation{
+  display: flex;
+  width: 423.13px;
+  height: 365.21px;
+  flex-direction: column;
+  .title{
+    font-family: 'Proxima Nova', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-bottom: 3.98px;
+    padding-top: 29.96px;
+  }
+  .sub-title{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+  .constellation{
+    position: relative;
+    width: 411.08px;
+    height: 333.14px;
+    .copy-writer{
+      position: absolute;
+      top: 71.08px;
+      left: 70.45px;
+    }
+    .smm-manager{
+      position: absolute;
+      top: 171.39px;
+      left: 92.66px;
+    }
+    .targetolog{
+      position: absolute;
+      top: 5.56px;
+      left: 179.29px;
+    }
+    .creator{
+      position: absolute;
+      top: 276.63px;
+      left: 117.24px;
+    }
+    .content-producer{
+      position: absolute;
+      top: 287.79px;
+      left: 256.53px;
+    }
+    .content-marketolog{
+      position: absolute;
+      top: 149.87px;
+      left: 301.8px;
+    }
+    .content-manager{
+      position: absolute;
+      top: 147.48px;
+      left: 163.38px;
+    }
+    .line-1{
+      position: absolute;
+      top: 83.31px;
+      left: 84.31px;
+    }
+    .line-2{
+      position: absolute;
+      top: 10px;
+      left: 98.87px;
+    }
+    .line-3{
+      position: absolute;
+      top: 175.04px;
+      left: 95.36px;
+    }
+    .line-4{
+      position: absolute;
+      bottom: 0;
+      left: 123.6px;
+    }
+    .line-5{
+      position: absolute;
+      top: 161.99px;
+      left: 260.61px;
+    }
+    .line-6{
+      position: absolute;
+      top: 162.71px;
+      left: 178.73px;
+    }
+    .line-7{
+      position: absolute;
+      top: 83.31px;
+      left: 84.31px;
+    }
+  }
+}

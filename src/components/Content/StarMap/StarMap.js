@@ -1,14 +1,11 @@
 import React from "react";
-import './starmap.scss'
-import ConstellationBrandDevelopment
-    from "../../Constellations/ConstellationBrandDevelopment/ConstellationBrandDevelopment";
+import './starmap.scss';
+import BrandDevelopmentMap from "../../BrandDevelopmentMap/BrandDevelopmentMap";
 
 const StarMap = () => {
     return (
         <div className="star-map-wrapper">
-            <div className="star-map-content">
-                <ConstellationBrandDevelopment/>
-            </div>
+            <BrandDevelopmentMap/>
         </div>
     )
 }

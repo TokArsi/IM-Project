@@ -1,7 +1,8 @@
-.brand-development-constellation{
+.image-constellation{
   display: flex;
+  width: 397.46px;
+  height: 290.05px;
   flex-direction: column;
-  padding-top: 60.59px;
   .title{
     font-family: 'Proxima Nova', serif;
     font-style: normal;
@@ -10,6 +11,7 @@
     line-height: 19px;
     color: #FFFFFF;
     padding-bottom: 3.98px;
+    padding-top: 29.96px;
   }
   .sub-title{
     font-family: 'Gilroy';
@@ -21,56 +23,52 @@
   }
   .constellation{
     position: relative;
-    .influence-marketer{
+    width: 580.19px;
+    height: 248.55px;
+    .press-supervisor{
       position: absolute;
-      top: 130.67px;
-      left: 61.26px;
-      .star-influence-marketer{
-      }
+      top: 36.49px;
+      left: 58.7px;
     }
-    .business-developer{
+    .press-helper{
       position: absolute;
-      top: 39.94px;
-      left: 157.65px;
-      .star-business-developer{
-      }
+      top: 35.7px;
+      left: 146.21px;
     }
-    .line{
+    .pr-manager{
       position: absolute;
-      top: 50.51px;
-      left: 71.63px;
+      top: 65.07px;
+      left: 262.23px;
+    }
+    .speech-writer{
+      position: absolute;
+      top: 164.79px;
+      left: 307.77px;
+    }
+    .gr-manager{
+      position: absolute;
+      top: 199.78px;
+      left: 200.44px;
+    }
+    .line-1{
+      position: absolute;
+      top: 47.97px;
+      left: 69.96px;
     }
     .line-2{
       position: absolute;
-      top: 44.75px;
-      left: 168.42px;
-    }
-    .brand-strategic{
-      position: absolute;
-      top: 33.4px;
-      left: 227.52px;
+      top: 47.97px;
+      left: 158.13px;
     }
     .line-3{
       position: absolute;
-      top: 45.64px;
-      left: 236.56px;
+      top: 75.36px;
+      left: 271.85px;
     }
     .line-4{
       position: absolute;
-      top: 30.34px;
-      left: 236.56px;
+      top: 169.9px;
+      left: 213.64px;
     }
-    .brand-manager{
-      position: absolute;
-      top: 19.05px;
-      left: 397.76px;
-    }
-    .reputation-brand{
-      position: absolute;
-      top: 95.59px;
-      left: 322.98px;
-    }
-
   }
-
 }
