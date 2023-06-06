@@ -7,6 +7,7 @@ import ConstellationMarketingAnalytics
 import ConstellationImage from "../Constellations/ConstellationImage/ConstellationImage";
 import AdvertCreativeConstellation from "../Constellations/AdvertCreativeConstellation/AdvertCreativeConstellation";
 import BrandConstellation from "../Constellations/test/test";
+import MarketingToolsManagementConstellation from "../Constellations/test/Marketing tools management";
 
 const BrandDevelopmentMap = () => {
     return (
@@ -16,6 +17,7 @@ const BrandDevelopmentMap = () => {
             {/*<ConstellationImage/>*/}
             {/*<AdvertCreativeConstellation/>*/}
             <BrandConstellation/>
+            <MarketingToolsManagementConstellation/>
         </div>
     );
 };
