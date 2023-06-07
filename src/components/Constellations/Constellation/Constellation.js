@@ -29,6 +29,7 @@ const Constellation = ({ starData, parentSize, constellationBlockSize, lineData 
                                 color: 'rgba(255, 255, 255, 0.6)',
                                 fontFamily: 'Proxima Nova',
                                 display: 'inline-block',
+                                whiteSpace: 'break-spaces'
                             }}>{data.title.text}</div>
                             <img src={data.url} alt="star" style={{
                                 position: 'absolute',

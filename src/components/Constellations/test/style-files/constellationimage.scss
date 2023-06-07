@@ -1,7 +1,5 @@
 .image-constellation{
   display: flex;
-  width: 397.46px;
-  height: 290.05px;
   flex-direction: column;
   .title{
     font-family: 'Proxima Nova', serif;
@@ -20,55 +18,5 @@
     font-size: 13px;
     line-height: 16px;
     color: #FFFFFF;
-  }
-  .constellation{
-    position: relative;
-    width: 580.19px;
-    height: 248.55px;
-    .press-supervisor{
-      position: absolute;
-      top: 36.49px;
-      left: 58.7px;
-    }
-    .press-helper{
-      position: absolute;
-      top: 35.7px;
-      left: 146.21px;
-    }
-    .pr-manager{
-      position: absolute;
-      top: 65.07px;
-      left: 262.23px;
-    }
-    .speech-writer{
-      position: absolute;
-      top: 164.79px;
-      left: 307.77px;
-    }
-    .gr-manager{
-      position: absolute;
-      top: 199.78px;
-      left: 200.44px;
-    }
-    .line-1{
-      position: absolute;
-      top: 47.97px;
-      left: 69.96px;
-    }
-    .line-2{
-      position: absolute;
-      top: 47.97px;
-      left: 158.13px;
-    }
-    .line-3{
-      position: absolute;
-      top: 75.36px;
-      left: 271.85px;
-    }
-    .line-4{
-      position: absolute;
-      top: 169.9px;
-      left: 213.64px;
-    }
   }
 }

@@ -21,7 +21,7 @@ const BrandDevelopmentMap = () => {
             {/*<AdvertCreativeConstellation/>*/}
             <BrandConstellation/>
             <MarketAnalytics/>
-            {/*<Image/>*/}
+            <Image/>
             {/*<AdvertCreativity></AdvertCreativity>*/}
             {/*<MarketingToolsManagementConstellation/>*/}
         </div>

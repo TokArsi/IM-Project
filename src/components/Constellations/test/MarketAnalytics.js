@@ -8,7 +8,7 @@ const starData = [
     { top: 136.31, left: 177.56, url: '/images/constallation/stars/advert-connect/account-manager.png', title: {top: 167.12, left: 144.36, text: 'Менеджер по рекламе'}},
     { top: 121.79, left: 55.69, url: '/images/constallation/stars/advert-connect/advert-manager.png', title: {top: 86.1, left: 0, text: 'Аккаунт-менеджер'}},
     { top: 94.55, left: 241.71,  url: '/images/constallation/stars/advert-connect/advert-strategic.png', title: {top: 85.91, left: 274.32, text: 'Рекламный стратег'}},
-    { top: 148.1, left: 281.61,  url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: {top: 250.93, left: 218.77, text: 'Менеджер по маркетингу'}},
+    { top: 148.1, left: 281.61,  url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: {top: 187.76, left: 218.77, text: 'Менеджер по маркетингу'}},
     { top: 208.69, left: 361.96,  url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: {top: 203.11, left: 402.76, text: 'Специалист по маркетинговым исседованиям'}},
     { top: 93.89, left: 385.83,  url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: {top: 133.83, left: 391.32, text: 'Руководитель отдела маркетинга'}},
     { top: 65.19, left: 445.49,  url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png',title: {top: 61.82, left: 486.26, text: 'Директор по маркетингу'}},
