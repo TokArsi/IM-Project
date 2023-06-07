@@ -1,0 +1,24 @@
+.advert-creative-constellation {
+  display: flex;
+  flex-direction: column;
+}
+.advert-creative-constellation .title {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding-bottom: 3.98px;
+  padding-top: 29.96px;
+}
+.advert-creative-constellation .sub-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=advertcreativeconstellation.css.map */

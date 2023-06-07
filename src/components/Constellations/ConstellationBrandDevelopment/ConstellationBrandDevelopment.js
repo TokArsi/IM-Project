@@ -1,5 +1,4 @@
 import React from "react";
-import './constellationbranddevelopment.scss'
 const ConstellationBrandDevelopment = () => {
     const starInfluenceMarketer = <img className={`star-influence-marketer`} src="/images/constallation/brand-development/star-brand.png" alt="star"/>
     const starBusinessDeveloper = <img className={`star-business-developer`} src="/images/constallation/brand-development/business-developer.png" alt="star"/>

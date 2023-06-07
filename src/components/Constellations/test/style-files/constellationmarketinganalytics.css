@@ -1,0 +1,24 @@
+.marketing-analytics-constellation {
+  display: flex;
+  padding-left: 30.58px;
+  flex-direction: column;
+}
+.marketing-analytics-constellation .title {
+  font-family: "Proxima Nova", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding-bottom: 3.98px;
+}
+.marketing-analytics-constellation .sub-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=constellationmarketinganalytics.css.map */

@@ -1,5 +1,5 @@
 import React from "react";
-import './advertcreativeconstellation.scss';
+
 
 const starCopyWriter = <img className={`star`} src="/images/constallation/advert-creative/copywriter.png" alt="star"/>
 const starSMMManager = <img className={`star`} src="/images/constallation/advert-creative/smm-manager.png" alt="star"/>

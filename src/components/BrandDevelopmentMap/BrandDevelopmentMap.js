@@ -6,8 +6,11 @@ import ConstellationMarketingAnalytics
     from "../Constellations/ConstellationMarketingAnalytics/ConstellationMarketingAnalytics";
 import ConstellationImage from "../Constellations/ConstellationImage/ConstellationImage";
 import AdvertCreativeConstellation from "../Constellations/AdvertCreativeConstellation/AdvertCreativeConstellation";
-import BrandConstellation from "../Constellations/test/test";
+import BrandConstellation from "../Constellations/test/BrandConstellation";
+import MarketAnalytics from "../Constellations/test/MarketAnalytics";
 import MarketingToolsManagementConstellation from "../Constellations/test/Marketing tools management";
+import Image from "../Constellations/test/Image";
+import AdvertCreativity from "../Constellations/test/AdvertCreativity";
 
 const BrandDevelopmentMap = () => {
     return (
@@ -17,7 +20,10 @@ const BrandDevelopmentMap = () => {
             {/*<ConstellationImage/>*/}
             {/*<AdvertCreativeConstellation/>*/}
             <BrandConstellation/>
-            <MarketingToolsManagementConstellation/>
+            <MarketAnalytics/>
+            {/*<Image/>*/}
+            {/*<AdvertCreativity></AdvertCreativity>*/}
+            {/*<MarketingToolsManagementConstellation/>*/}
         </div>
     );
 };

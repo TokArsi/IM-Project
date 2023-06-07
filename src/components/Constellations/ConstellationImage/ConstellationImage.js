@@ -1,5 +1,4 @@
 import React from "react";
-import './constellationimage.scss';
 
 const starPressSuperVisor = <img className={`white-star`} src="/images/constallation/Image/yellowStar.png" alt="star"/>
 const starPressHelper = <img className={`white-star`} src="/images/constallation/Image/yellowStar.png" alt="star"/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stage, Layer, Line, Image } from 'react-konva';
+import './constellation.scss'
 
 const Constellation = ({ starData, parentSize, constellationBlockSize, lineData }) => {
     console.log(starData)
@@ -21,11 +21,21 @@ const Constellation = ({ starData, parentSize, constellationBlockSize, lineData 
             {
                 starData.map(data => {
                     return (
-                        <img src={data.url} alt="star" style={{
-                            position: 'absolute',
-                            top: data.top,
-                            left: data.left,
-                        }}/>
+                        <div className="star-block">
+                            <div className={'titleBlock'} style={{
+                                position: 'absolute',
+                                top: data.title.top,
+                                left: data.title.left,
+                                color: 'rgba(255, 255, 255, 0.6)',
+                                fontFamily: 'Proxima Nova',
+                                display: 'inline-block',
+                            }}>{data.title.text}</div>
+                            <img src={data.url} alt="star" style={{
+                                position: 'absolute',
+                                top: data.top,
+                                left: data.left,
+                            }}/>
+                        </div>
                     )
                 })
             }

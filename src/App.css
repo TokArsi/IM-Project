@@ -2,7 +2,7 @@
     background-image: url('../public/images/фон.png');
     mix-blend-mode: normal;
     padding: 63px 200px 33px 200px;
-    min-height: 100vh;
+    height: 100%;
 }
 @media{
 
