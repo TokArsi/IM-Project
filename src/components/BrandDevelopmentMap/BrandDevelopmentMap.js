@@ -15,13 +15,11 @@ import AdvertCreativity from "../Constellations/test/AdvertCreativity";
 const BrandDevelopmentMap = () => {
     return (
         <div className="brand-development-map">
-            {/*<ConstellationBrandDevelopment/>*/}
-            {/*<ConstellationMarketingAnalytics/>*/}
-            {/*<ConstellationImage/>*/}
-            {/*<AdvertCreativeConstellation/>*/}
             <BrandConstellation/>
             <MarketAnalytics/>
             <Image/>
+            <AdvertCreativity/>
+            <MarketingToolsManagementConstellation/>
             {/*<AdvertCreativity></AdvertCreativity>*/}
             {/*<MarketingToolsManagementConstellation/>*/}
         </div>

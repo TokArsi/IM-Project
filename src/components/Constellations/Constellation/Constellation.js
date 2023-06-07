@@ -1,5 +1,4 @@
 import React from 'react';
-import './constellation.scss'
 
 const Constellation = ({ starData, parentSize, constellationBlockSize, lineData }) => {
     console.log(starData)
