@@ -1,6 +1,7 @@
 .advert-creative-constellation {
   display: flex;
   flex-direction: column;
+  padding-left: 53.93px;
 }
 .advert-creative-constellation .title {
   font-family: "Proxima Nova", serif;

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 60.59px;
+  position: relative;
 }
 .brand-development-constellation .title {
   font-family: "Proxima Nova", serif;

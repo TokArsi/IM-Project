@@ -1,6 +1,10 @@
 import React from "react";
 import './navbarlist.scss'
 export const NavBarList = () => {
+const AdvertPublicRelations = React.createContext({
+    isClicked: false,
+    id: ''
+})
     const TextAdvertising = `Реклама и связи с общественностью в бизнесе`;
     const TextBrandManagement = `Бренд-менеджмент`;
     const TextMarketingCommunications = `Цифровые маркетинговые коммуникации`;

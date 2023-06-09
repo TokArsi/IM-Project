@@ -3,7 +3,7 @@ import React from "react";
 import './style-files/constellationbranddevelopment.scss'
 
 const starData = [
-    { top: 130.67, left: 61.26,  url: '/images/constallation/brand-development/star-brand.png', title: {top: 97.85, left: 0, text: 'Influence-<br>маркетолог'} },
+    { top: 130.67, left: 61.26,  url: '/images/constallation/brand-development/star-brand.png', title: {top: 97.85, left: 0, text: 'Influence-маркетолог'} },
     { top: 39.94, left: 157.65, url: '/images/constallation/brand-development/business-developer.png', title: {top: 3.49, left: 101.48, text: 'Бизнес-девелопер'} },
     { top: 33.4, left: 227.52, url: '/images/constallation/brand-development/star-brand.png', title: {top: 0, left: 227.63, text: 'Бренд-стратег'} },
     { top: 19.05, left: 397.76, url: '/images/constallation/brand-development/star-brand.png', title: {top: 9.18, left: 426.09, text: 'Бренд-менеджер'} },
@@ -17,10 +17,18 @@ const lineData = [
     { top: 30.34, left: 236.56, url: '/images/constallation/brand-development/line4.png' },
 ];
 
+const directionType = [
+    {advertPublicCommunications: false, digitalMarketingCommunications: false, promotionNewBusiness: false, brandManagement: true, marketing: false},
+    {advertPublicCommunications: false, digitalMarketingCommunications: false, promotionNewBusiness: true, brandManagement: true, marketing: false},
+    {advertPublicCommunications: false, digitalMarketingCommunications: false, promotionNewBusiness: false, brandManagement: true, marketing: false},
+    {advertPublicCommunications: false, digitalMarketingCommunications: false, promotionNewBusiness: false, brandManagement: true, marketing: false},
+    {advertPublicCommunications: false, digitalMarketingCommunications: false, promotionNewBusiness: false, brandManagement: true, marketing: false},
+];
+
 const constellationBlockSize = {
     width: 488.09,
     height: 152.71
-}
+};
 const BrandConstellation = () => {
     return (
         <div className={'brand-development-constellation'} style={{width: 488.09, height: 222.95}}>
