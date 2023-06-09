@@ -22,6 +22,16 @@ const lineData = [
     { top: 84.31, left: 84.31, url: '/images/constallation/advert-creative/line7.png'},
 ];
 
+const directionType = [
+    {advertPublicCommunications: true, digitalMarketingCommunications: true, promotionNewBusiness: false, brandManagement: false, marketing: false},
+    {advertPublicCommunications: true, digitalMarketingCommunications: true, promotionNewBusiness: false, brandManagement: false, marketing: false},
+    {advertPublicCommunications: false, digitalMarketingCommunications: true, promotionNewBusiness: false, brandManagement: false, marketing: false},
+    {advertPublicCommunications: false, digitalMarketingCommunications: true, promotionNewBusiness: false, brandManagement: false, marketing: false},
+    {advertPublicCommunications: true, digitalMarketingCommunications: true, promotionNewBusiness: false, brandManagement: false, marketing: false},
+    {advertPublicCommunications: true, digitalMarketingCommunications: false, promotionNewBusiness: false, brandManagement: false, marketing: false},
+    {advertPublicCommunications: true, digitalMarketingCommunications: false, promotionNewBusiness: false, brandManagement: false, marketing: false},
+];
+
 const constellationBlockSize = {
     width: 411.08, height: 333.14
 }
