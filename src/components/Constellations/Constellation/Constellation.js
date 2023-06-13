@@ -1,19 +1,72 @@
-import React from 'react';
+import React, {useContext, useEffect, useState} from 'react';
+import DataContext from "../../../contexts/DataContext";
+import nextId from "react-id-generator";
 
-const Constellation = ({ starData, parentSize, constellationBlockSize, lineData }) => {
-    console.log(starData)
-    console.log(parentSize)
-    // const setRelativeStarPositions = (starData, parentSize) => {
-    //     return starData.map((data) => {
-    //         const relativePositionTop = (data.top / parentSize.x) * 100;
-    //         const relativePositionLeft = (data.left / parentSize.y) * 100;
-    //         return { top: relativePositionTop, left: relativePositionLeft, url: data.url };
-    //     });
-    // };
+const Constellation = ({ starData, constellationBlockSize, lineData, directionType }) => {
+    const [url, setUrl] = useState('');
+    const [starArray, setStarArray] = useState([]);
+    const {
+        brandManagement,
+        advertPublic,
+        digitalMarketingCommunication,
+        promotionMarketingCommunication,
+        marketing
+    } = useContext(DataContext);
 
-    // const relativeStarPositions = setRelativeStarPositions(starData, parentSize);
+    const directionObject = {
+        advertPublicCommunications: advertPublic,
+        digitalMarketingCommunications: digitalMarketingCommunication,
+        promotionNewBusiness: promotionMarketingCommunication,
+        brandManagement: brandManagement,
+        marketing: marketing
+    };
 
-    // const linePoints = starData.flatMap((position) => [position.top, position.left]);
+    const setNewUrl = (starData, direction) => {
+        let index = directionType.indexOf(direction);
+        const url = starData[index].url;
+        if(!starArray.includes(starData[index].id))
+        {
+            starData[index].url = url.replace('.png', '-active.png');
+            setStarArray(prevState => [...prevState, starData[index].id]);
+            setUrl(url);
+        }
+    };
+
+    const setOldUrl = (starData, direction) => {
+        let index = directionType.indexOf(direction);
+        const url = starData[index].url;
+        if(url.includes('-active.png'))
+        {
+            let count = 0;
+            starData[index].directions.map(item => {
+                if(directionType[index][item] && directionObject[item])
+                    count--;
+            })
+            if(count < 2) {
+                setUrl(url);
+                starData[index].url = url.replace('-active.png', '.png');
+                setStarArray(prevState => prevState.filter(id => id !== starData[index].id));
+            }
+        }
+    };
+
+    useEffect(() => {
+        directionType.forEach(direction => {
+            if (direction.brandManagement && brandManagement) {
+                setNewUrl(starData, direction);
+            } else if (direction.advertPublicCommunications && advertPublic) {
+                setNewUrl(starData, direction);
+            } else if (direction.digitalMarketingCommunications && digitalMarketingCommunication) {
+                setNewUrl(starData, direction);
+            } else if (direction.promotionNewBusiness && promotionMarketingCommunication) {
+                setNewUrl(starData, direction);
+            } else if (direction.marketing && marketing) {
+                setNewUrl(starData, direction);
+            } else {
+                setOldUrl(starData, direction);
+            }
+        });
+    }, [brandManagement, advertPublic, digitalMarketingCommunication, promotionMarketingCommunication, marketing]);
 
     return (
         <div className="consellation" style={{position: 'relative', width: constellationBlockSize.width, height: constellationBlockSize.height}}>

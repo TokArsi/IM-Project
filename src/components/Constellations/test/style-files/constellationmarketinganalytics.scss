@@ -1,7 +1,7 @@
 .marketing-analytics-constellation{
-  display: flex;
-  padding-left: 30.58px;
-  flex-direction: column;
+  position: absolute;
+  top: 51px;
+  left: 589.68px;
   .title{
     font-family: 'Proxima Nova', serif;
     font-style: normal;
@@ -18,5 +18,6 @@
     font-size: 13px;
     line-height: 16px;
     color: #FFFFFF;
+    padding-bottom: 24.19px;
   }
 }
