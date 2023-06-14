@@ -80,14 +80,15 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                 left: data.title.left,
                                 color: 'rgba(255, 255, 255, 0.6)',
                                 fontFamily: 'Proxima Nova',
-                                display: 'inline-block',
-                                whiteSpace: 'break-spaces'
+                                display: 'inline-block'
                             }}>{data.title.text}</div>
-                            <img src={data.url} alt="star" style={{
-                                position: 'absolute',
-                                top: data.top,
-                                left: data.left,
-                            }}/>
+                            <div>
+                                <img src={data.url} alt="star" style={{
+                                    position: 'absolute',
+                                    top: data.top,
+                                    left: data.left,
+                                }}/>
+                            </div>
                         </div>
                     )
                 })

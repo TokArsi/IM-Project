@@ -9,10 +9,29 @@
   height: 100%;
   overflow: auto;
 }
+.star-map-wrapper .tool-bar {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 9999;
+}
+.star-map-wrapper .tool-bar img {
+  width: 49.64px;
+  height: 53.59px;
+}
+.star-map-wrapper .tool-bar .fullscreen {
+  padding: 41px 89.82px 0 20px;
+}
+.star-map-wrapper .tool-bar .navigation {
+  padding-top: 41px;
+}
 
 .star-map-wrapper::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+.star-map-wrapper.clicked {
+  cursor: url("../../../../public/images/handleCoursor.png"), auto;
 }
 
 /*# sourceMappingURL=starmap.css.map */
