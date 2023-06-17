@@ -1,5 +1,5 @@
 import {eventWrapper} from "@testing-library/user-event/dist/utils";
-import React from "react";
+import React, {useState} from "react";
 import './cards.scss';
 const cards = [
 {
@@ -424,7 +424,9 @@ const cards = [
 },
 ]
 const Card = ({name, setStarName}) => {
-    let object
+    const [isClicked, setIsClicked] = useState(false);
+    const [isNavigated, setIsNavigated] = useState(false);
+    let object;
     cards.map(card => {
         if(card.title === name)
         {
@@ -448,9 +450,14 @@ const Card = ({name, setStarName}) => {
                     <div className="card-job-vacancy">{object.count_vacancies}</div>
                     <div className="card-version">*по версии hh.ru на апрель 2023 года</div>
                     <div className="card-programs">{`Подробнее о программах обучения профессии ${object.title}`}</div>
-                    <div className="card-link">
+                    <div
+                        className={`card-link ${isClicked ? 'clicked' : isNavigated ? 'navigated' : ''}`}
+                        onMouseEnter={() => setIsNavigated(true)}
+                        onMouseLeave={() => setIsNavigated(false)}
+                    >
                         <div className="direction-link">
-                            <a href="#">Направление</a>
+                            <a href={object.link} target={"_blank"}
+                               onClick={() => setIsClicked(true)}>{object.direction}</a>
                             <img src="/images/contacts/arrow.png" alt=""/>
                         </div>
                     </div>

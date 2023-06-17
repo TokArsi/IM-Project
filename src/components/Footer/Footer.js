@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './sass files/footer.scss';
 import './sass files/logocomponent.scss';
 import './sass files/contactcomponent.scss'
@@ -37,6 +37,8 @@ const LogoComponent = () => {
     )
 }
 const ChoosingProfession = () => {
+  const [isClicked, setIsClicked] = useState(false);
+  const [isNavigated, setIsNavigated] = useState(false);
   return(
       <div className="profession-wrapper">
           <div className="profession-question">
@@ -46,8 +48,16 @@ const ChoosingProfession = () => {
               Пройди тестирование и узнай, какая профессия в области маркетинга тебе подходит!
           </div>
           <div className="profession-test">
-              <div className="test-link">
-                  <a href="#">Пройти тест</a>
+              <div
+                   className={`test-link ${isClicked ? 'clicked' : isNavigated ? 'navigated' : ''}`}
+                   onMouseEnter={() => setIsNavigated(true)}
+                   onMouseLeave={() => setIsNavigated(false)}
+              >
+                  <a
+                      href="#"
+                      target={"_blank"}
+                      onClick={() => setIsClicked(true)}>Пройти тест
+                  </a>
                   <img src="/images/contacts/arrow.png" alt=""/>
               </div>
           </div>
