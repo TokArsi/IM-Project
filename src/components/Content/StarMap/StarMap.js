@@ -1,6 +1,8 @@
-import React, {useRef, useState} from "react";
+import React, {useContext, useEffect, useRef, useState} from "react";
 import './starmap.scss';
 import BrandDevelopmentMap from "../../BrandDevelopmentMap/BrandDevelopmentMap";
+import DataContext from "../../../contexts/DataContext";
+import Card from "../../Cards/Cards";
 
 const StarMap = ({setIsFullscreen, isFullscreen}) => {
     const [isNavigate, setIsNavigate] = useState(false);
@@ -11,6 +13,17 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
     const [startY, setStartY] = useState(null);
     const [scrollLeft, setScrollLeft] = useState(0);
     const [scrollTop, setScrollTop] = useState(0);
+    const [isActive, setIsActive] = useState(false);
+    const {
+        starName, setStarName,
+        isStarActive, setIsStarActive,
+    } = useContext(DataContext);
+
+    useEffect(() => {
+        if(starName !== null)
+            setStarName(starName)
+        else setStarName(null)
+    }, [starName])
 
     const handleMouseDown = (event) => {
         setStartX(event.clientX);
@@ -43,23 +56,31 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
              onMouseLeave={(e) => {if(isClicked) return handleMouseUp(e)}}
              style={{ userSelect: 'none' }}
         >
-            <div className="tool-bar">
-                <div className="navigation"
+            <div className={`tool-bar`}>
+                <div className={`navigation ${isClicked ? `clicked` : isHandleMouseNavigate ? `navigated` : ``}`}
                      onClick={() => setIsClicked(!isClicked)}
                      onMouseEnter={() => {setIsHandleMouseNavigate(true)}}
                      onMouseLeave={() => {setIsHandleMouseNavigate(false)}}
                 >
-                    <img src={isClicked ? `/images/navigation-active.png` : isHandleMouseNavigate ? `/images/navigation-navigate.png` : `/images/navigation.png`} alt=""/>
+                    <img src="/images/navigation.png" alt=""/>
                 </div>
-                <div className="fullscreen"
+                <div className={`fullscreen ${isFullscreen ? `clicked` : isNavigate ? `navigated` : ``}`}
                      onClick={() => setIsFullscreen(!isFullscreen)}
                      onMouseEnter={() => setIsNavigate(true)}
                      onMouseLeave={() => setIsNavigate(false)}
                 >
-                    <img src={isFullscreen ? `/images/fulscreen-active.png` : isNavigate ? `/images/fullscreen-navigate.png` : `/images/fulscreen.png`} alt=""/>
+                    <img src="/images/fullscreen.png" alt=""/>
                 </div>
             </div>
+            <div className={`plus-minus ${isClicked ? `clicked` : isHandleMouseNavigate ? `navigated` : ``}`}
+                 onClick={() => setIsClicked(!isClicked)}
+                 onMouseEnter={() => {setIsHandleMouseNavigate(true)}}
+                 onMouseLeave={() => {setIsHandleMouseNavigate(false)}}>
+                    <div className={`plus`}>+</div>
+                    <div className={`minus`}>-</div>
+            </div>
             <BrandDevelopmentMap/>
+            {starName !== null ? <Card name={starName} setStarName={setStarName}/> : null}
         </div>
     )
 }

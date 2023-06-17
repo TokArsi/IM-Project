@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   padding-top: 36px;
+  width: fit-content;
+  flex-wrap: wrap;
   .authors{
     display: flex;
     flex-direction: column;

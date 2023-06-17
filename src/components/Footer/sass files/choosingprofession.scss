@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   padding-top: 32px;
+  width: fit-content;
+  flex-wrap: wrap;
   .profession-question{
     font-family: 'Proxima Nova', serif;
     font-style: normal;

@@ -1,6 +1,8 @@
 .logo-wrapper {
   display: flex;
   padding-top: 32px;
+  width: fit-content;
+  flex-wrap: wrap;
 }
 .logo-wrapper .logos {
   display: flex;

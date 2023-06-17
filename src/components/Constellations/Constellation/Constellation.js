@@ -10,6 +10,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
         digitalMarketingCommunication,
         promotionMarketingCommunication,
         marketing, isStarActive, setIsStarActive,
+        setStarName
     } = useContext(DataContext);
 
     const directionObject = {
@@ -65,7 +66,16 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                 setOldUrl(starData, direction);
             }
         });
-    }, [brandManagement, advertPublic, digitalMarketingCommunication, promotionMarketingCommunication, marketing]);
+        starData.map(star => {
+            if(Object.values(isStarActive).filter(item => item === true).length > 0) {
+                if(isStarActive[star.id]) {
+                    setStarName(star.title.text);
+                }
+            } else setStarName(null);
+
+
+        })
+    }, [brandManagement, advertPublic, digitalMarketingCommunication, promotionMarketingCommunication, marketing, isStarActive]);
 
     return (
         <div className="consellation" style={{position: 'relative', width: constellationBlockSize.width, height: constellationBlockSize.height}}>
@@ -73,8 +83,19 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                 starData.map(data => {
                     return (
                         <div key={data.id} className="star-block"
-                             style={{ }}
-                             onClick={e => setIsStarActive(prevState => ({ ...prevState, [data.id]: !prevState[data.id] }))}
+                             onClick={e => {
+                                 setIsStarActive(prevState => {
+                                     // Создаем новый объект, где все значения устанавливаются в false
+                                     const newState = Object.keys(prevState).reduce((acc, key) => {
+                                         acc[key] = false;
+                                         return acc;
+                                     }, {});
+
+                                     // Устанавливаем значение текущего data.id в true
+                                     newState[data.id] = !prevState[data.id];
+                                     return newState;
+                                 });
+                             }}
                         >
                             <div className={'titleBlock'} style={{
                                 position: 'absolute',

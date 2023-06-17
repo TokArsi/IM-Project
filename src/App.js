@@ -12,6 +12,7 @@ const App = () => {
     const [brandManagement, setBrandManagement] = useState(false);
     const [marketing, setMarketing] = useState(false);
     const [isStarActive, setIsStarActive] = useState({});
+    const [starName, setStarName] = useState(null);
 
     return (
     <div className="App">
@@ -22,6 +23,7 @@ const App = () => {
             setAdvertPublic, setBrandManagement,
             setMarketing, setDigitalMarketingCommunication,
             isStarActive, setIsStarActive,
+            starName, setStarName
         }}>
         <Header/>
         <Content/>

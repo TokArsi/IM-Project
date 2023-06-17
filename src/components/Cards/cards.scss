@@ -1,0 +1,130 @@
+.card-wrapper{
+  position: absolute;
+  right: 0;
+  top: 15%;
+  width: 50%;
+  height: fit-content;
+  z-index: 9999;
+  background: rgba(147, 145, 254, 0.15);
+  box-shadow: 0px 3.54751px 26.6063px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(40px);
+  border-radius: 40px 0px 0px 0px;
+  .card-contanier{
+    padding: 30px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    .card-close-button{
+      align-self: flex-end;
+      padding-bottom: 26px;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      .card-title{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+      }
+      .card-task{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        padding: 30px 0 10px 0;
+      }
+      .card-description{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 30px;
+      }
+      .card-salary-title{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+      }
+      .card-salary{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 2px;
+      }
+      .card-version{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 140%;
+        color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 30px;
+      }
+      .card-demand-title{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+      }
+      .card-job-vacancy{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 4px;
+      }
+      .card-programs{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+      }
+      .card-link{
+        border: 0.886878px solid #FFFFFF;
+        filter: drop-shadow(0px 4px 10px rgba(64, 137, 227, 0.37));
+        border-radius: 53.2127px;
+        width: fit-content;
+        .direction-link{
+            a {
+              font-family: 'Proxima Nova';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 22px;
+              text-decoration-line: underline;
+              color: #FFFFFF;
+              align-self: center;
+              padding: 9px 10px 9px 13.85px;
+              white-space: nowrap;
+            }
+            img {
+              align-self: center;
+              padding-right: 13.85px;
+            }
+        }
+      }
+    }
+  }
+}
