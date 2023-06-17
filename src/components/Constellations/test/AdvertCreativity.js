@@ -11,7 +11,7 @@ const starData = [
         url: '/images/constallation/stars/advert-connect/copywriter.png',
         title: { top: 72.98, left: -14, text: `Копирайтер`},
         directions: ['advertPublicCommunications', 'digitalMarketingCommunications'],
-        isActive: false,
+        transform: 'matrix(-0.95, -0.3, 0.3, -0.95, 0, 0)',
     },
     {
         top: 171.31,
@@ -19,7 +19,7 @@ const starData = [
         url: '/images/constallation/stars/advert-connect/smm-manager.png',
         title: { top: 153.15, left: 20.48, text: `SMM-менеджер`},
         directions: ['advertPublicCommunications', 'digitalMarketingCommunications'],
-        isActive: false,
+        transform: '',
     },
     {
         top: 5.56,
@@ -27,7 +27,7 @@ const starData = [
         url: '/images/constallation/stars/digital-communications/digital.png',
         title: { top: 4.59, left: 199.24, text: `Таргетолог`},
         directions: ['digitalMarketingCommunications'],
-        isActive: false,
+        transform: '',
     },
     {
         top: 279.63,
@@ -35,7 +35,7 @@ const starData = [
         url: '/images/constallation/stars/digital-communications/digital.png',
         title: { top: 284.71, left: 57.72, text: `Креатор`},
         directions: ['digitalMarketingCommunications'],
-        isActive: false,
+        transform: '',
     },
     {
         top: 287.79,
@@ -43,7 +43,7 @@ const starData = [
         url: '/images/constallation/stars/advert-connect/content-producer.png',
         title: { top: 285.64, left: 275.57, text: `Контент-продюсер`},
         directions: ['advertPublicCommunications', 'digitalMarketingCommunications'],
-        isActive: false,
+        transform: '',
     },
     {
         top: 149.87,
@@ -51,7 +51,7 @@ const starData = [
         url: '/images/constallation/stars/advert-connect/content-marketolog.png',
         title: { top: 149.87, left: 338.25, text: `Контент-маркетолог`},
         directions: ['advertPublicCommunications'],
-        isActive: false,
+        transform: 'matrix(0.87, -0.48, 0.48, 0.88, 0, 0)',
     },
     {
         top: 147.48,
@@ -59,7 +59,7 @@ const starData = [
         url: '/images/constallation/stars/advert-connect/content-manager.png',
         title: { top: 184.74, left: 173.16, text: `Контент-менеджер`},
         directions: ['advertPublicCommunications'],
-        isActive: false,
+        transform: 'matrix(0.95, 0.3, -0.3, 0.95, 0, 0)',
     },
 ];
 

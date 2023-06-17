@@ -116,6 +116,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                         top: data.top,
                                         left: data.left,
                                         zIndex: 9999,
+                                        transform: data.transform,
                                     }}
                                 />
                                 {isStarActive[data.id] && (
