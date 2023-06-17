@@ -1,5 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import DataContext from "../../../contexts/DataContext";
+import './constellation.scss'
 
 const Constellation = ({ starData, constellationBlockSize, lineData, directionType }) => {
     const [url, setUrl] = useState('');
@@ -72,8 +73,6 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                     setStarName(star.title.text);
                 }
             } else setStarName(null);
-
-
         })
     }, [brandManagement, advertPublic, digitalMarketingCommunication, promotionMarketingCommunication, marketing, isStarActive]);
 
@@ -83,19 +82,6 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                 starData.map(data => {
                     return (
                         <div key={data.id} className="star-block"
-                             onClick={e => {
-                                 setIsStarActive(prevState => {
-                                     // Создаем новый объект, где все значения устанавливаются в false
-                                     const newState = Object.keys(prevState).reduce((acc, key) => {
-                                         acc[key] = false;
-                                         return acc;
-                                     }, {});
-
-                                     // Устанавливаем значение текущего data.id в true
-                                     newState[data.id] = !prevState[data.id];
-                                     return newState;
-                                 });
-                             }}
                         >
                             <div className={'titleBlock'} style={{
                                 position: 'absolute',
@@ -106,30 +92,48 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                 width: '24%',
                                 zIndex: -1,
                             }}>{data.title.text}</div>
-                            <div style={{ margin: '0 auto', }}
+                            <div onClick={e => {
+                                setIsStarActive(prevState => {
+                                    // Создаем новый объект, где все значения устанавливаются в false
+                                    const newState = Object.keys(prevState).reduce((acc, key) => {
+                                        acc[key] = false;
+                                        return acc;
+                                    }, {});
+                                    newState[data.id] = !prevState[data.id];
+                                    return newState;
+                                });
+                            }}
+                                className={`${isStarActive[data.id] ? `star-active` : ''}`}
+                                style={{margin: '0 auto',
+                                    position: 'absolute',
+                                    width: 46,
+                                    height: 46,
+                                    top: data.top - 12,
+                                    left: data.left - 11,
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center'
+                                }}
                                 >
                                 <img
                                     src={data.url}
-                                    alt=""
+                                    alt="star"
                                     style={{
-                                        position: 'absolute',
-                                        top: data.top,
-                                        left: data.left,
                                         zIndex: 9999,
                                         transform: data.transform,
                                     }}
                                 />
-                                {isStarActive[data.id] && (
-                                    <img
-                                        style={{
-                                            position: 'absolute',
-                                            top: data.top,
-                                            left: data.left,
-                                        }}
-                                        src="/images/active-ellips.png"
-                                        alt=""
-                                    />
-                                )}
+                                {/*{isStarActive[data.id] && (*/}
+                                {/*    <img*/}
+                                {/*        style={{*/}
+                                {/*            position: 'absolute',*/}
+                                {/*            top: data.top,*/}
+                                {/*            left: data.left,*/}
+                                {/*        }}*/}
+                                {/*        src="/images/active-ellips.png"*/}
+                                {/*        alt=""*/}
+                                {/*    />*/}
+                                {/*)}*/}
                             </div>
                         </div>
                     )
@@ -138,7 +142,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
             {
                 lineData.map((data, index) => {
                     return (
-                        <img src={data.url} alt={'line'} key={index} style={{position: "absolute", top: data.top, left: data.left}}></img>
+                        <img src={data.url} alt={'line'} key={index} style={{position: "absolute", top: data.top, left: data.left, zIndex: -1}}></img>
                     )
                 })
             }

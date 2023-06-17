@@ -7,7 +7,7 @@ import Image from "../Constellations/test/Image";
 import AdvertCreativity from "../Constellations/test/AdvertCreativity";
 import DataContext from "../../contexts/DataContext";
 
-const BrandDevelopmentMap = () => {
+const BrandDevelopmentMap = ({scale}) => {
     const {
         isStarActive, setIsStarActive,
     } = useContext(DataContext);
@@ -26,7 +26,7 @@ const BrandDevelopmentMap = () => {
 
 
     return (
-        <div className="brand-development-map">
+        <div className="brand-development-map" style={{ transform: `scale(${scale}%)` }}>
                 <BrandConstellation/>
                 <MarketAnalytics/>
                 <Image/>

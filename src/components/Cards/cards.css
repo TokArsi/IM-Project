@@ -110,6 +110,9 @@
   border-radius: 53.2127px;
   width: fit-content;
 }
+.card-wrapper .card-contanier .content .card-link .direction-link {
+  padding: 9px 18px 9px 18px;
+}
 .card-wrapper .card-contanier .content .card-link .direction-link a {
   font-family: "Proxima Nova";
   font-style: normal;
@@ -125,6 +128,18 @@
 .card-wrapper .card-contanier .content .card-link .direction-link img {
   align-self: center;
   padding-right: 13.85px;
+}
+.card-wrapper .card-contanier .content .card-link.clicked {
+  background: rgba(192, 232, 255, 0.4);
+  border: 0.886878px solid #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(64, 137, 227, 0.37);
+  border-radius: 53.2127px;
+}
+.card-wrapper .card-contanier .content .card-link.navigated {
+  background: rgba(192, 232, 255, 0.13);
+  border: 0.886878px solid #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(64, 137, 227, 0.37);
+  border-radius: 53.2127px;
 }
 
 /*# sourceMappingURL=cards.css.map */

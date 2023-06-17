@@ -18,11 +18,7 @@
     .fullscreen{
       margin-top: 41px;
       background: rgba(252, 252, 252, 0.2);
-      /* блюр навигация */
-
       backdrop-filter: blur(5px);
-      /* Note: backdrop-filter has minimal browser support */
-
       border-radius: 8.86878px;
       width: 49.64px;
       height: 53.59px;
@@ -33,18 +29,12 @@
     .fullscreen.clicked{
       background: rgba(255, 255, 255, 0.2);
       border: 1px solid #FFFFFF;
-      /* блюр навигация */
-
       backdrop-filter: blur(5px);
-      /* Note: backdrop-filter has minimal browser support */
-
       border-radius: 8.86878px;
     }
     .fullscreen.navigated{
       background: rgba(192, 232, 255, 0.4);
-      /* блюр навигация */
       backdrop-filter: blur(5px);
-      /* Note: backdrop-filter has minimal browser support */
       border-radius: 8.86878px;
     }
     .navigation{
@@ -53,8 +43,6 @@
       background: rgba(252, 252, 252, 0.2);
       backdrop-filter: blur(5px);
       border-radius: 8.86878px;
-      //width: fit-content;
-      //height: fit-content;
       width: 49.64px;
       height: 53.59px;
       img{
@@ -64,40 +52,47 @@
     .navigation.clicked{
       background: rgba(252, 252, 252, 0.2);
       border: 1px solid #FFFFFF;
-      /* 3 */
-
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
       border-radius: 8.86878px;
   }
     .navigation.navigated{
       background: rgba(192, 232, 255, 0.4);
-      /* 2 */
       box-shadow: 0px 4px 10px rgba(64, 137, 227, 0.37);
     }
     }
   .plus-minus{
+    z-index: 9999;
     position: absolute;
-    right: 90.31px;
+    right: 20.31px;
     top: 594.59px;
     display: flex;
     flex-direction: column;
     background: rgba(252, 252, 252, 0.2);
-    /* блюр навигация */
-
     backdrop-filter: blur(5px);
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 7.0008px;
+    width: fit-content;
+    height: fit-content;
     .plus{
       font-size: 23.69px;
       color: #F5F5F5;
       padding: 22px 13px 29px 13px;
+    }
+    .plus.clicked{
+      color: rgba(245, 245, 245, 0.2);
+    }
+    .minus.clicked{
+      color: rgba(245, 245, 245, 0.2);
     }
     .minus{
       font-size: 40px;
       color: #F5F5F5;
       padding: 0 13px 22px 13px;
     }
+  }
+  .plus-minus.navigated{
+    background: rgba(192, 232, 255, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 7.0008px;
   }
 }
 .star-map-wrapper::-webkit-scrollbar {

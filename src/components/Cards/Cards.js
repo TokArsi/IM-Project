@@ -1,6 +1,7 @@
 import {eventWrapper} from "@testing-library/user-event/dist/utils";
 import React, {useState} from "react";
 import './cards.scss';
+
 const cards = [
 {
     title: "Пресс-секретарь",
@@ -423,10 +424,10 @@ const cards = [
     link: "https://imguu.ru/newbusiness",
 },
 ]
-const Card = ({name, setStarName}) => {
+const Card = ({name, setIsStarActive}) => {
     const [isClicked, setIsClicked] = useState(false);
     const [isNavigated, setIsNavigated] = useState(false);
-    let object;
+    let object
     cards.map(card => {
         if(card.title === name)
         {
@@ -436,7 +437,14 @@ const Card = ({name, setStarName}) => {
     return (
         <div className="card-wrapper">
             <div className="card-contanier">
-                <div className="card-close-button" onClick={() => setStarName(null)}>
+                <div className="card-close-button" onClick={() => setIsStarActive(prevState => {
+                        // Создаем новый объект, где все значения устанавливаются в false
+                        const newState = Object.keys(prevState).reduce((acc, key) => {
+                            acc[key] = false;
+                            return acc;
+                        }, {});
+                        return newState;
+                })}>
                     <img src="/images/close.png" alt=""/>
                 </div>
                 <div className="content">

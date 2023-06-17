@@ -13,11 +13,26 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
     const [startY, setStartY] = useState(null);
     const [scrollLeft, setScrollLeft] = useState(0);
     const [scrollTop, setScrollTop] = useState(0);
-    const [isActive, setIsActive] = useState(false);
+    const [isPlusClicked, setIsPlusClicked] = useState(false);
+    const [isMinusClicked, setIsMinusClicked] = useState(false);
+    const [isPlusMinusNavigated, setIsPlusMinusNavigated] = useState(false);
     const {
         starName, setStarName,
         isStarActive, setIsStarActive,
     } = useContext(DataContext);
+    const [scale, setScale] = useState(100); // Изначальный масштаб 100%
+
+    const handleZoomIn = () => {
+        if (scale < 200) {
+            setScale(prevScale => prevScale + 10); // Увеличение масштаба на 10%
+        }
+    };
+
+    const handleZoomOut = () => {
+        if (scale > 100) {
+            setScale(prevScale => prevScale - 10); // Уменьшение масштаба на 10%
+        }
+    };
 
     useEffect(() => {
         if(starName !== null)
@@ -72,15 +87,28 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
                     <img src="/images/fullscreen.png" alt=""/>
                 </div>
             </div>
-            <div className={`plus-minus ${isClicked ? `clicked` : isHandleMouseNavigate ? `navigated` : ``}`}
-                 onClick={() => setIsClicked(!isClicked)}
-                 onMouseEnter={() => {setIsHandleMouseNavigate(true)}}
-                 onMouseLeave={() => {setIsHandleMouseNavigate(false)}}>
-                    <div className={`plus`}>+</div>
-                    <div className={`minus`}>-</div>
+            <div className={`plus-minus ${isPlusMinusNavigated ? `navigated` : ``}`}
+                 onMouseEnter={() => {setIsPlusMinusNavigated(true)}}
+                 onMouseLeave={() => {setIsPlusMinusNavigated(false)}}>
+                    <div
+                        className={`plus ${isMinusClicked ? 'clicked' : ''}`}
+                        onClick={() => {
+                            setIsPlusClicked(true);
+                            setIsMinusClicked(false);
+                            handleZoomIn();
+                        }}
+                    >+</div>
+                    <div
+                        className={`minus ${isPlusClicked ? 'clicked' : ''}`}
+                        onClick={() => {
+                            setIsPlusClicked(false);
+                            setIsMinusClicked(true);
+                            handleZoomOut();
+                        }}
+                    >-</div>
             </div>
-            <BrandDevelopmentMap/>
-            {starName !== null ? <Card name={starName} setStarName={setStarName}/> : null}
+            <BrandDevelopmentMap scale={scale}/>
+            {starName !== null ? <Card name={starName} setIsStarActive={setIsStarActive}/> : null}
         </div>
     )
 }
