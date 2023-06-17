@@ -73,7 +73,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                 starData.map(data => {
                     return (
                         <div key={data.id} className="star-block"
-                             style={{ zIndex: 9999,}}
+                             style={{ }}
                              onClick={e => setIsStarActive(prevState => ({ ...prevState, [data.id]: !prevState[data.id] }))}
                         >
                             <div className={'titleBlock'} style={{
@@ -82,7 +82,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                 left: data.title.left,
                                 color: 'rgba(255, 255, 255, 0.6)',
                                 fontFamily: 'Proxima Nova',
-                                width: '18%',
+                                width: '24%',
                                 zIndex: -1,
                             }}>{data.title.text}</div>
                             <div style={{ margin: '0 auto', }}
@@ -94,6 +94,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                         position: 'absolute',
                                         top: data.top,
                                         left: data.left,
+                                        zIndex: 9999,
                                     }}
                                 />
                                 {isStarActive[data.id] && (

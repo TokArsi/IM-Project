@@ -6,13 +6,13 @@ import DataContext from "../../../contexts/DataContext";
 
 const starData = [
     { top: 372.38, left: 34.46, url: '/images/constallation/stars/advert-connect/mediaplanner.png', title: { top: 380.92, left: 71.87, text: 'Медиапланер' }, directions: ['advertPublicCommunications', 'digitalMarketingCommunications', 'promotionNewBusiness'], isActive: false, },
-    { top: 254.92, left: 222.43, url: '/images/constallation/stars/brand-management-stars/brand-management.png', title: { top: 257.92, left: 250.19, text: 'Event-менеджер' }, directions: ['brandManagement'], isActive: false,},
-    { top: 274.92, left: 85.6, url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: { top: 277.92, left: 0, text: 'BTL-менеджер' }, directions: ['marketing'], isActive: false, },
-    { top: 204.73, left: 156.94, url: '/images/constallation/stars/promotion/promotion.png', title: { top: 207.92, left: 186.19, text: 'Проджект-менеджер' }, directions: ['promotionNewBusiness'], isActive: false, },
+    { top: 254.92, left: 222.43, url: '/images/constallation/stars/brand-management-stars/brand-management.png', title: { top: 257.92, left: 258.19, text: 'Event-менеджер' }, directions: ['brandManagement'], isActive: false,},
+    { top: 274.92, left: 85.6, url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: { top: 277.92, left: 17.84, text: 'BTL-менеджер' }, directions: ['marketing'], isActive: false, },
+    { top: 204.73, left: 156.94, url: '/images/constallation/stars/promotion/promotion.png', title: { top: 202.92, left: 192.19, text: 'Проджект-менеджер' }, directions: ['promotionNewBusiness'], isActive: false, },
     { top: 128.2, left: 153.76, url: '/images/constallation/stars/Promotion-Brand.png', title: { top: 124.21, left: 82.35, text: 'Продакт-менеджер' }, directions: ['promotionNewBusiness', 'brandManagement', 'marketing'], isActive: false, },
-    { top: 108.57, left: 251.87, url: '/images/constallation/stars/promotion/promotion.png', title: { top: 105.87, left: 280.41, text: 'Категорийный менеджер' }, directions: ['promotionNewBusiness'], isActive: false, },
-    { top: 76.19, left: 201.49, url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: { top: 37.89, left: 123.53, text: 'Специалист по ценообразованию' }, directions: ['marketing'], isActive: false, },
-    { top: 53.25, left: 273.09, url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: { top: 0, left: 248.04, text: 'Менеджер по дистрибуции и продажам' }, directions: ['marketing'], isActive: false, },
+    { top: 108.57, left: 251.87, url: '/images/constallation/stars/promotion/promotion.png', title: { top: 109.87, left: 287.41, text: 'Категорийный менеджер' }, directions: ['promotionNewBusiness'], isActive: false, },
+    { top: 76.19, left: 201.49, url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: { top: 20.89, left: 123.53, text: 'Специалист по ценообразованию' }, directions: ['marketing'], isActive: false, },
+    { top: 53.25, left: 273.09, url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png', title: { top: -9.99, left: 248.04, text: 'Менеджер по дистрибуции и продажам' }, directions: ['marketing'], isActive: false, },
 ];
 
 const directionType = [

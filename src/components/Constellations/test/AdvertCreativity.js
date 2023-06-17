@@ -9,7 +9,7 @@ const starData = [
         top: 71.08,
         left: 70.45,
         url: '/images/constallation/stars/advert-connect/copywriter.png',
-        title: { top: 62.98, left: 0, text: `Копирайтер`},
+        title: { top: 72.98, left: -14, text: `Копирайтер`},
         directions: ['advertPublicCommunications', 'digitalMarketingCommunications'],
         isActive: false,
     },
@@ -30,8 +30,8 @@ const starData = [
         isActive: false,
     },
     {
-        top: 284.63,
-        left: 124.24,
+        top: 279.63,
+        left: 121.24,
         url: '/images/constallation/stars/digital-communications/digital.png',
         title: { top: 284.71, left: 57.72, text: `Креатор`},
         directions: ['digitalMarketingCommunications'],
@@ -48,7 +48,7 @@ const starData = [
     {
         top: 149.87,
         left: 301.8,
-        url: '/images/constallation/stars/advert-connect/content-manager.png',
+        url: '/images/constallation/stars/advert-connect/content-marketolog.png',
         title: { top: 149.87, left: 338.25, text: `Контент-маркетолог`},
         directions: ['advertPublicCommunications'],
         isActive: false,
@@ -56,7 +56,7 @@ const starData = [
     {
         top: 147.48,
         left: 163.38,
-        url: '/images/constallation/stars/advert-connect/content-marketolog.png',
+        url: '/images/constallation/stars/advert-connect/content-manager.png',
         title: { top: 184.74, left: 173.16, text: `Контент-менеджер`},
         directions: ['advertPublicCommunications'],
         isActive: false,

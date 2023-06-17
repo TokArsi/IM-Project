@@ -7,9 +7,9 @@ import DataContext from "../../../contexts/DataContext";
 const starData = [
     { top: 130.67, left: 61.26, url: '/images/constallation/stars/brand-management-stars/brand-management.png', title: { top: 97.85, left: 0, text: 'Influence-маркетолог' }, directions: ['brandManagement'], isActive: false, },
     { top: 39.94, left: 157.65, url: '/images/constallation/stars/promotion/promotion.png', title: { top: 3.49, left: 101.48, text: 'Бизнес-девелопер' }, directions: ['promotionNewBusiness'], isActive: false, },
-    { top: 33.4, left: 227.52, url: '/images/constallation/stars/brand-management-stars/brand-management.png', title: { top: 0, left: 227.63, text: 'Бренд-стратег' }, directions: ['brandManagement'], isActive: false, },
-    { top: 19.05, left: 397.76, url: '/images/constallation/stars/brand-management-stars/brand-management.png', title: { top: 9.18, left: 426.09, text: 'Бренд-менеджер' }, directions: ['brandManagement'], isActive: false, },
-    { top: 95.59, left: 322.98, url: '/images/constallation/stars/brand-management-stars/brand-management.png', title: { top: 81.24, left: 351.39, text: 'Специалист по управлению репутацией бренда' }, directions: ['brandManagement'], isActive: false, },
+    { top: 33.4, left: 227.52, url: '/images/constallation/stars/brand-management-stars/brand-management.png', title: { top: 9, left: 227.63, text: 'Бренд-стратег' }, directions: ['brandManagement'], isActive: false, },
+    { top: 19.05, left: 397.76, url: '/images/constallation/stars/brand-management-stars/brand-management.png', title: { top: 0, left: 372.09, text: 'Бренд-менеджер' }, directions: ['brandManagement'], isActive: false, },
+    { top: 95.59, left: 322.98, url: '/images/constallation/stars/brand-management-stars/brand-management.png', title: { top: 81.24, left: 359.39, text: 'Специалист по управлению репутацией бренда' }, directions: ['brandManagement'], isActive: false, },
 ];
 const directionType = [
     {advertPublicCommunications: false, digitalMarketingCommunications: false, promotionNewBusiness: false, brandManagement: true, marketing: false},

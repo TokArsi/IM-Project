@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('../public/images/фон.png');
   mix-blend-mode: normal;
-  cursor: url("../public/images/cursor.png"), auto;
+  /*cursor: url("../public/images/cursor.png"), auto;*/
 }
 
 code {
