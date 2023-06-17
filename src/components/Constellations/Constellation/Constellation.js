@@ -1,6 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
 import DataContext from "../../../contexts/DataContext";
-import nextId from "react-id-generator";
 
 const Constellation = ({ starData, constellationBlockSize, lineData, directionType }) => {
     const [url, setUrl] = useState('');
@@ -10,7 +9,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
         advertPublic,
         digitalMarketingCommunication,
         promotionMarketingCommunication,
-        marketing
+        marketing, isStarActive, setIsStarActive,
     } = useContext(DataContext);
 
     const directionObject = {
@@ -73,30 +72,50 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
             {
                 starData.map(data => {
                     return (
-                        <div className="star-block">
+                        <div key={data.id} className="star-block"
+                             style={{ zIndex: 9999,}}
+                             onClick={e => setIsStarActive(prevState => ({ ...prevState, [data.id]: !prevState[data.id] }))}
+                        >
                             <div className={'titleBlock'} style={{
                                 position: 'absolute',
                                 top: data.title.top,
                                 left: data.title.left,
                                 color: 'rgba(255, 255, 255, 0.6)',
                                 fontFamily: 'Proxima Nova',
-                                display: 'inline-block'
+                                width: '18%',
+                                zIndex: -1,
                             }}>{data.title.text}</div>
-                            <div>
-                                <img src={data.url} alt="star" style={{
-                                    position: 'absolute',
-                                    top: data.top,
-                                    left: data.left,
-                                }}/>
+                            <div style={{ margin: '0 auto', }}
+                                >
+                                <img
+                                    src={data.url}
+                                    alt=""
+                                    style={{
+                                        position: 'absolute',
+                                        top: data.top,
+                                        left: data.left,
+                                    }}
+                                />
+                                {isStarActive[data.id] && (
+                                    <img
+                                        style={{
+                                            position: 'absolute',
+                                            top: data.top,
+                                            left: data.left,
+                                        }}
+                                        src="/images/active-ellips.png"
+                                        alt=""
+                                    />
+                                )}
                             </div>
                         </div>
                     )
                 })
             }
             {
-                lineData.map(data => {
+                lineData.map((data, index) => {
                     return (
-                        <img src={data.url} alt={'line'} style={{position: "absolute", top: data.top, left: data.left}}></img>
+                        <img src={data.url} alt={'line'} key={index} style={{position: "absolute", top: data.top, left: data.left}}></img>
                     )
                 })
             }

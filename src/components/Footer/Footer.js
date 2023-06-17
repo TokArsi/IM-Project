@@ -12,8 +12,8 @@ const ContactComponent = () => {
     ]
   return(
       <div className="contact-wrapper">
-          {contacts.map(({src, text}) => (
-              <div className="contact-block">
+          {contacts.map(({src, text}, index) => (
+              <div key={index} className="contact-block">
                   <img src={src} alt=""/>
                   <div>{text}</div>
               </div>

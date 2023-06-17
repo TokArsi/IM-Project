@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   width: 100%;
-  flex-shrink: 0;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=footer.css.map */

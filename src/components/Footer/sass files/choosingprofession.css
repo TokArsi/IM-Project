@@ -1,7 +1,6 @@
 .profession-wrapper {
   display: flex;
   flex-direction: column;
-  padding-left: 5%;
   padding-top: 32px;
 }
 .profession-wrapper .profession-question {

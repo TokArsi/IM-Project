@@ -11,11 +11,8 @@ const App = () => {
     const [promotionMarketingCommunication, setPromotionMarketingCommunication] = useState(false);
     const [brandManagement, setBrandManagement] = useState(false);
     const [marketing, setMarketing] = useState(false);
-    console.log('advertPublic', advertPublic);
-    console.log('digitalMarketingCommunication', digitalMarketingCommunication);
-    console.log('promotionMarketingCommunication', promotionMarketingCommunication);
-    console.log('brandManagement', brandManagement);
-    console.log('marketing', marketing);
+    const [isStarActive, setIsStarActive] = useState({});
+
     return (
     <div className="App">
         <DataContext.Provider value={{
@@ -24,6 +21,7 @@ const App = () => {
             marketing, setPromotionMarketingCommunication,
             setAdvertPublic, setBrandManagement,
             setMarketing, setDigitalMarketingCommunication,
+            isStarActive, setIsStarActive,
         }}>
         <Header/>
         <Content/>
