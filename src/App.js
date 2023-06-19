@@ -13,22 +13,43 @@ const App = () => {
     const [marketing, setMarketing] = useState(false);
     const [isStarActive, setIsStarActive] = useState({});
     const [starName, setStarName] = useState(null);
+    const [isFullscreen, setIsFullscreen] = useState(false);
 
     return (
     <div className="App">
-        <DataContext.Provider value={{
+        {isFullscreen ? (
+                <DataContext.Provider value={{
+                    brandManagement, advertPublic,
+                    digitalMarketingCommunication, promotionMarketingCommunication,
+                    marketing, setPromotionMarketingCommunication,
+                    setAdvertPublic, setBrandManagement,
+                    setMarketing, setDigitalMarketingCommunication,
+                    isStarActive, setIsStarActive,
+                    starName, setStarName,
+                    isFullscreen, setIsFullscreen
+                }}>
+                    <div className="container">
+                        <Content/>
+                    </div>
+                </DataContext.Provider>
+        )
+            :  (<DataContext.Provider value={{
             brandManagement, advertPublic,
             digitalMarketingCommunication, promotionMarketingCommunication,
             marketing, setPromotionMarketingCommunication,
             setAdvertPublic, setBrandManagement,
             setMarketing, setDigitalMarketingCommunication,
             isStarActive, setIsStarActive,
-            starName, setStarName
+            starName, setStarName,
+            isFullscreen, setIsFullscreen
         }}>
-        <Header/>
-        <Content/>
-        <Footer/>
-        </DataContext.Provider>
+            <div className="container">
+                <Header/>
+                <Content/>
+            </div>
+            <Footer/>
+        </DataContext.Provider>)}
+
     </div>
   );
 }

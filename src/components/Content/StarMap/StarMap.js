@@ -17,8 +17,7 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
     const [isMinusClicked, setIsMinusClicked] = useState(false);
     const [isPlusMinusNavigated, setIsPlusMinusNavigated] = useState(false);
     const {
-        starName, setStarName,
-        isStarActive, setIsStarActive,
+        starName, setStarName, setIsStarActive,
     } = useContext(DataContext);
     const [scale, setScale] = useState(100); // Изначальный масштаб 100%
 

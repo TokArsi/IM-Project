@@ -1,8 +1,9 @@
 .App {
-    padding: 63px 200px 33px 200px;
+    overflow: hidden;
+}
+.container{
+    padding: 63px 200px 0 200px;
     min-height: 100%;
 }
-@media{
 
-}
 

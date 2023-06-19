@@ -123,17 +123,6 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                         transform: data.transform,
                                     }}
                                 />
-                                {/*{isStarActive[data.id] && (*/}
-                                {/*    <img*/}
-                                {/*        style={{*/}
-                                {/*            position: 'absolute',*/}
-                                {/*            top: data.top,*/}
-                                {/*            left: data.left,*/}
-                                {/*        }}*/}
-                                {/*        src="/images/active-ellips.png"*/}
-                                {/*        alt=""*/}
-                                {/*    />*/}
-                                {/*)}*/}
                             </div>
                         </div>
                     )

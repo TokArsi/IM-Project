@@ -1,4 +1,3 @@
-import {eventWrapper} from "@testing-library/user-event/dist/utils";
 import React, {useState} from "react";
 import './cards.scss';
 
@@ -439,11 +438,10 @@ const Card = ({name, setIsStarActive}) => {
             <div className="card-contanier">
                 <div className="card-close-button" onClick={() => setIsStarActive(prevState => {
                         // Создаем новый объект, где все значения устанавливаются в false
-                        const newState = Object.keys(prevState).reduce((acc, key) => {
+                    return Object.keys(prevState).reduce((acc, key) => {
                             acc[key] = false;
                             return acc;
                         }, {});
-                        return newState;
                 })}>
                     <img src="/images/close.png" alt=""/>
                 </div>

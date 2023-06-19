@@ -90,10 +90,12 @@ const AuthorPrivacyComponent = () => {
 const Footer = () => {
     return (
         <div className="footer">
-            <LogoComponent/>
-            <AuthorPrivacyComponent/>
-            <ChoosingProfession/>
-            <ContactComponent/>
+            <div className="container-footer-content">
+                <LogoComponent/>
+                <AuthorPrivacyComponent/>
+                <ChoosingProfession/>
+                <ContactComponent/>
+            </div>
         </div>
     )
 }
