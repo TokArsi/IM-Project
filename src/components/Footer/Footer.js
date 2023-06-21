@@ -6,16 +6,16 @@ import './sass files/authorprivacy.scss'
 import './sass files/choosingprofession.scss'
 export const ContactComponent = () => {
     const contacts = [
-        {src: '/images/contacts/phone.png', text: '+7 (495) 371-57-66' },
-        {src: '/images/contacts/vkontakte.png', text: 'Мы ВКонтакте' },
-        {src: '/images/contacts/telegram.png', text: 'Мы в Телеграм' },
+        {src: '/images/contacts/phone.png', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
+        {src: '/images/contacts/vkontakte.png', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
+        {src: '/images/contacts/telegram.png', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
     ]
   return(
       <div className="contact-wrapper">
-          {contacts.map(({src, text}, index) => (
+          {contacts.map(({src, text, link}, index) => (
               <div key={index} className="contact-block">
                   <img src={src} alt=""/>
-                  <div>{text}</div>
+                  <a target='_blank' href={link}>{text}</a>
               </div>
               )
           )}
