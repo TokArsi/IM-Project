@@ -24,3 +24,15 @@
     }
   }
 }
+.contact-wrapper-mobile{
+  display: flex;
+  width: fit-content;
+  .contact-block-mobile{
+    display: flex;
+    img {
+      width: 20px;
+      height: 20px;
+      padding-left: 10px;
+    }
+  }
+}

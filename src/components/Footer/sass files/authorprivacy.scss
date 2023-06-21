@@ -53,3 +53,58 @@
     }
   }
 }
+@media (max-width: 900px) and (min-width: 390px) {
+  .author-privacy-wrapper {
+    display: flex;
+    padding-top: 29px;
+    width: fit-content;
+    flex-wrap: wrap;
+    .authors {
+      display: flex;
+      flex-wrap: wrap;
+      .developers {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        opacity: 0.6;
+        padding-bottom: 1px;
+      }
+      .designers {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        opacity: 0.6;
+      }
+    }
+    .privacy {
+      display: flex;
+      flex-wrap: wrap;
+      .year {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        opacity: 0.7;
+        padding-right: 10px;
+      }
+      .privacy-policy {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        opacity: 0.7;
+      }
+    }
+  }
+}

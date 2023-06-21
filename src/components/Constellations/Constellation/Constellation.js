@@ -119,7 +119,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                     src={data.url}
                                     alt="star"
                                     style={{
-                                        zIndex: 9999,
+                                        zIndex: 9997,
                                         transform: data.transform,
                                     }}
                                 />

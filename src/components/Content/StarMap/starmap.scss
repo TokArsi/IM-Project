@@ -63,16 +63,16 @@
   .plus-minus{
     z-index: 9999;
     position: absolute;
-    right: 6%;
-    top: 594.59px;
+    left: 90%;
+    bottom: 124.92px;
     display: flex;
     flex-direction: column;
     background: rgba(252, 252, 252, 0.2);
     backdrop-filter: blur(5px);
     border-radius: 7.0008px;
     width: 49.69px;
-    height: fit-content;
     align-items: center;
+    transform: translateZ(0);
     .plus{
       font-size: 40px;
       color: #F5F5F5;

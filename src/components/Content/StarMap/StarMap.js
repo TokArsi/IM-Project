@@ -3,6 +3,7 @@ import './starmap.scss';
 import BrandDevelopmentMap from "../../BrandDevelopmentMap/BrandDevelopmentMap";
 import DataContext from "../../../contexts/DataContext";
 import Card from "../../Cards/Cards";
+import {NavBarListMobile} from "../../NavBarList/NavBarList";
 
 const StarMap = ({setIsFullscreen, isFullscreen}) => {
     const [isNavigate, setIsNavigate] = useState(false);
@@ -16,9 +17,7 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
     const [isPlusClicked, setIsPlusClicked] = useState(false);
     const [isMinusClicked, setIsMinusClicked] = useState(false);
     const [isPlusMinusNavigated, setIsPlusMinusNavigated] = useState(false);
-    const {
-        starName, setStarName, setIsStarActive,
-    } = useContext(DataContext);
+
     const [scale, setScale] = useState(100); // Изначальный масштаб 100%
 
     const handleZoomIn = () => {
@@ -33,11 +32,7 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
         }
     };
 
-    useEffect(() => {
-        if(starName !== null)
-            setStarName(starName)
-        else setStarName(null)
-    }, [starName])
+
 
     const handleMouseDown = (event) => {
         setStartX(event.clientX);
@@ -78,13 +73,6 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
                 >
                     <img src="/images/navigation.png" alt=""/>
                 </div>
-                <div className={`fullscreen ${isFullscreen ? `clicked` : isNavigate ? `navigated` : ``}`}
-                     onClick={() => setIsFullscreen(!isFullscreen)}
-                     onMouseEnter={() => setIsNavigate(true)}
-                     onMouseLeave={() => setIsNavigate(false)}
-                >
-                    <img src="/images/fullscreen.png" alt=""/>
-                </div>
             </div>
             <div className={`plus-minus ${isPlusMinusNavigated ? `navigated` : ``}`}
                  onMouseEnter={() => {setIsPlusMinusNavigated(true)}}
@@ -107,7 +95,6 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
                     >-</div>
             </div>
             <BrandDevelopmentMap scale={scale}/>
-            {starName !== null ? <Card name={starName} setIsStarActive={setIsStarActive}/> : null}
         </div>
     )
 }

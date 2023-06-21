@@ -11,7 +11,6 @@ const BrandDevelopmentMap = ({scale}) => {
     const {
         isStarActive, setIsStarActive,
     } = useContext(DataContext);
-    console.log(isStarActive)
 
     useEffect(() => {
         const objectWithKeys = {};

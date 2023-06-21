@@ -4,7 +4,7 @@ import './sass files/logocomponent.scss';
 import './sass files/contactcomponent.scss'
 import './sass files/authorprivacy.scss'
 import './sass files/choosingprofession.scss'
-const ContactComponent = () => {
+export const ContactComponent = () => {
     const contacts = [
         {src: '/images/contacts/phone.png', text: '+7 (495) 371-57-66' },
         {src: '/images/contacts/vkontakte.png', text: 'Мы ВКонтакте' },
@@ -22,7 +22,24 @@ const ContactComponent = () => {
       </div>
   )
 }
-const LogoComponent = () => {
+export const ContactComponentMobile = () => {
+    const contacts = [
+        {src: '/images/contacts/phone.png'},
+        {src: '/images/contacts/vkontakte.png'},
+        {src: '/images/contacts/telegram.png'},
+    ]
+    return(
+        <div className="contact-wrapper-mobile">
+            {contacts.map(({src}, index) => (
+                    <div key={index} className="contact-block-mobile">
+                        <img src={src} alt=""/>
+                    </div>
+                )
+            )}
+        </div>
+    )
+}
+export const LogoComponent = () => {
     return(
         <div className="logo-wrapper">
             <div className="logos">
@@ -36,7 +53,7 @@ const LogoComponent = () => {
         </div>
     )
 }
-const ChoosingProfession = () => {
+export const ChoosingProfession = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [isNavigated, setIsNavigated] = useState(false);
   return(
@@ -64,7 +81,7 @@ const ChoosingProfession = () => {
       </div>
   )
 }
-const AuthorPrivacyComponent = () => {
+export const AuthorPrivacyComponent = () => {
   return (
       <div className="author-privacy-wrapper">
           <div className="authors">
@@ -96,6 +113,25 @@ const Footer = () => {
                 <ChoosingProfession/>
                 <ContactComponent/>
             </div>
+        </div>
+    )
+}
+export const FooterMobile = () => {
+    return (
+        <div className="footer">
+                <div className="container-footer-content-mobile">
+                    <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                        <div style={{display: 'flex', flexWrap: 'nowrap'}}>
+                            <img style={{paddingRight: 3.97}} width={20} height={20} src="/images/listImages/guulogo.png" alt=""/>
+                            <img width={20} height={20} src="/images/listImages/imlogo.png" alt=""/>
+                        </div>
+                        <ContactComponentMobile/>
+                    </div>
+                    <div className={`choosing-privacy`}>
+                        <ChoosingProfession/>
+                        <AuthorPrivacyComponent/>
+                    </div>
+                </div>
         </div>
     )
 }

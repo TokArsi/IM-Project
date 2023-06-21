@@ -25,4 +25,17 @@
   padding-right: 10px;
 }
 
+.contact-wrapper-mobile {
+  display: flex;
+  width: fit-content;
+}
+.contact-wrapper-mobile .contact-block-mobile {
+  display: flex;
+}
+.contact-wrapper-mobile .contact-block-mobile img {
+  width: 20px;
+  height: 20px;
+  padding-left: 10px;
+}
+
 /*# sourceMappingURL=contactcomponent.css.map */

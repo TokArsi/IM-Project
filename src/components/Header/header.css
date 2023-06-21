@@ -5,7 +5,7 @@
 .header .header-information {
   display: flex;
   flex-direction: column;
-  padding-right: 112px;
+  padding-right: 61px;
   height: fit-content;
 }
 .header .header-information .header-title {
@@ -18,6 +18,35 @@
   text-align: left;
 }
 .header .header-information .header-note {
+  max-width: fit-content;
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header-mobile {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 65px;
+}
+.header-mobile .header-information-mobile {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.header-mobile .header-information-mobile .header-title-mobile {
+  color: #FFFFFF;
+  font-family: Proxima Nova, serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 51px;
+  letter-spacing: 0;
+  text-align: left;
+}
+.header-mobile .header-information-mobile .header-note-mobile {
   max-width: fit-content;
   font-family: "Gilroy", serif;
   font-style: normal;

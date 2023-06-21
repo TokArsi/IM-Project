@@ -109,9 +109,8 @@ export const NavBarListMobile = () => {
 
     return(
         <div className={`navbar-list-mobile`}>
-            {list.map(({src, text, isActive, }, index) => (
-                <p key={index}>
-                    <div className={`navbar-list-item-mobile`}>
+                {list.map(({src, text, isActive, }, index) => (
+                    <div key={index} className={`navbar-list-item-mobile ${isActive ? 'clicked' : ''}`}>
                         <div className={`navbar-list-logo-mobile ${isActive ? 'clicked' : ''}`}>
                             <img src={src} alt=""/>
                         </div>
@@ -122,8 +121,7 @@ export const NavBarListMobile = () => {
                             className={`navbar-list-item-text-mobile ${isActive ? 'active' : ''}`}
                         >{text}</div>
                     </div>
-                </p>
-            ))}
+                ))}
         </div>
     )
 }
