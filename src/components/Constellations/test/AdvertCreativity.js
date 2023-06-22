@@ -91,19 +91,6 @@ starData.map((star) => {
 })
 
 const AdvertCreativity = () => {
-
-    const {
-        setIsStarActive,
-    } = useContext(DataContext);
-
-    useEffect(() => {
-        const initialState = {};
-        starData.forEach(star => {
-            initialState[star.id] = false;
-        });
-        setIsStarActive(prevState => ({ ...prevState, ...initialState }));
-    }, []);
-
     return (
         <div className={'advert-creative-constellation'} style={{width: 423.13, height: 365.21}}>
             <Constellation starData={starData} parentSize={{width: 423.13, height: 365.21}} constellationBlockSize={constellationBlockSize} lineData={lineData} directionType={directionType}/>
