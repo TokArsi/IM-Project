@@ -27,7 +27,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
         const url = starData[index].url;
         if(!starArray.includes(starData[index].id))
         {
-            starData[index].url = url.replace('.png', '-active.png');
+            starData[index].url = url.replace('.svg', '-active.svg');
             setStarArray(prevState => [...prevState, starData[index].id]);
             setUrl(url);
         }
@@ -36,7 +36,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
     const setOldUrl = (starData, direction) => {
         let index = directionType.indexOf(direction);
         const url = starData[index].url;
-        if(url.includes('-active.png'))
+        if(url.includes('-active.svg'))
         {
             let count = 0;
             starData[index].directions.map(item => {
