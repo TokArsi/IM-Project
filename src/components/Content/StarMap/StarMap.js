@@ -13,30 +13,10 @@ const StarMap = () => {
     const [startY, setStartY] = useState(null);
     const [scrollLeft, setScrollLeft] = useState(0);
     const [scrollTop, setScrollTop] = useState(0);
-    const [isPlusClicked, setIsPlusClicked] = useState(false);
-    const [isMinusClicked, setIsMinusClicked] = useState(false);
-    const [isPlusMinusNavigated, setIsPlusMinusNavigated] = useState(false);
-
-    const [scale, setScale] = useState(100); // Изначальный масштаб 100%
-    useEffect(() => {
-        setScrollLeft(0);
-        setScrollTop(0);
-    }, [scale]);
-    const handleZoomIn = () => {
-        if (scale < 200) {
-            setScale(prevScale => prevScale + 10); // Увеличение масштаба на 10%
-        }
-    };
-    const handleZoomOut = () => {
-        if (scale > 100) {
-            setScale(prevScale => prevScale - 10); // Уменьшение масштаба на 10%
-        }
-    };
     const handleMouseDown = (event) => {
         setStartX(event.clientX);
         setStartY(event.clientY);
     };
-
     const handleMouseMove = (event) => {
         if (startX && startY) {
             const x = event.clientX;
@@ -71,27 +51,7 @@ const StarMap = () => {
                     <img src="/images/navigation.png" alt=""/>
                 </div>
             </div>
-            <div className={`plus-minus ${isPlusMinusNavigated ? `navigated` : ``}`}
-                 onMouseEnter={() => {setIsPlusMinusNavigated(true)}}
-                 onMouseLeave={() => {setIsPlusMinusNavigated(false)}}>
-                    <div
-                        className={`plus ${isMinusClicked ? 'clicked' : ''}`}
-                        onClick={() => {
-                            setIsPlusClicked(true);
-                            setIsMinusClicked(false);
-                            handleZoomIn();
-                        }}
-                    >+</div>
-                    <div
-                        className={`minus ${isPlusClicked ? 'clicked' : ''}`}
-                        onClick={() => {
-                            setIsPlusClicked(false);
-                            setIsMinusClicked(true);
-                            handleZoomOut();
-                        }}
-                    >-</div>
-            </div>
-            <BrandDevelopmentMap scale={scale}/>
+            <BrandDevelopmentMap/>
         </div>
     )
 }

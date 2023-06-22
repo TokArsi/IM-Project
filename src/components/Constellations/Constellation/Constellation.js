@@ -45,7 +45,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
             })
             if(count < 2) {
                 setUrl(url);
-                starData[index].url = url.replace('-active.png', '.png');
+                starData[index].url = url.replace('-active.svg', '.svg');
                 setStarArray(prevState => prevState.filter(id => id !== starData[index].id));
             }
         }

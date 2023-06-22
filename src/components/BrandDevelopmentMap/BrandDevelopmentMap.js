@@ -25,7 +25,7 @@ const BrandDevelopmentMap = ({scale}) => {
 
 
     return (
-        <div className="brand-development-map" style={{ transform: `scale(${scale}%)` }}>
+        <div className="brand-development-map">
                 <BrandConstellation/>
                 <MarketAnalytics/>
                 <Image/>
