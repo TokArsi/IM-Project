@@ -9,7 +9,7 @@ import DataContext from "../../contexts/DataContext";
 
 const BrandDevelopmentMap = ({scale}) => {
     const {
-        isStarActive, setIsStarActive,
+        setIsStarActive,
     } = useContext(DataContext);
 
     useEffect(() => {
@@ -31,7 +31,7 @@ const BrandDevelopmentMap = ({scale}) => {
                 <Image/>
                 <AdvertCreativity/>
                 <MarketingToolsManagementConstellation/>
-        </div>
+            </div>
     );
 };
 export default BrandDevelopmentMap;

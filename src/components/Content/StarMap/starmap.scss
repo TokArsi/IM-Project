@@ -7,7 +7,7 @@
   border-top-left-radius: 30px;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: scroll;
   position: relative;
   .tool-bar{
     position: absolute;
@@ -23,6 +23,7 @@
       border-radius: 8.86878px;
       width: 49.64px;
       height: 53.59px;
+      cursor: pointer;
       img{
         padding: 11.35px 13.55px 11.73px 12.77px
       }
@@ -55,6 +56,7 @@
       font-size: 40px;
       color: #F5F5F5;
       height: 100%;
+      cursor: pointer;
     }
     .plus.clicked{
       color: rgba(245, 245, 245, 0.2);
@@ -67,6 +69,7 @@
       color: #F5F5F5;
       height: 100%;
       padding-bottom: 8px;
+      cursor: pointer;
     }
   }
   .plus-minus.navigated{

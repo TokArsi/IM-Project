@@ -5,8 +5,7 @@ import DataContext from "../../../contexts/DataContext";
 import Card from "../../Cards/Cards";
 import {NavBarListMobile} from "../../NavBarList/NavBarList";
 
-const StarMap = ({setIsFullscreen, isFullscreen}) => {
-    const [isNavigate, setIsNavigate] = useState(false);
+const StarMap = () => {
     const [isClicked, setIsClicked] = useState(false);
     const [isHandleMouseNavigate, setIsHandleMouseNavigate] = useState(false);
     const containerRef = useRef(null);
@@ -19,21 +18,20 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
     const [isPlusMinusNavigated, setIsPlusMinusNavigated] = useState(false);
 
     const [scale, setScale] = useState(100); // Изначальный масштаб 100%
-
+    useEffect(() => {
+        setScrollLeft(0);
+        setScrollTop(0);
+    }, [scale]);
     const handleZoomIn = () => {
         if (scale < 200) {
             setScale(prevScale => prevScale + 10); // Увеличение масштаба на 10%
         }
     };
-
     const handleZoomOut = () => {
         if (scale > 100) {
             setScale(prevScale => prevScale - 10); // Уменьшение масштаба на 10%
         }
     };
-
-
-
     const handleMouseDown = (event) => {
         setStartX(event.clientX);
         setStartY(event.clientY);
@@ -49,7 +47,6 @@ const StarMap = ({setIsFullscreen, isFullscreen}) => {
             containerRef.current.scrollTop = scrollTop - deltaY;
         }
     };
-
     const handleMouseUp = () => {
         setStartX(null);
         setStartY(null);

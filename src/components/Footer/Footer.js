@@ -24,15 +24,15 @@ export const ContactComponent = () => {
 }
 export const ContactComponentMobile = () => {
     const contacts = [
-        {src: '/images/contacts/phone.png'},
-        {src: '/images/contacts/vkontakte.png'},
-        {src: '/images/contacts/telegram.png'},
+        {src: '/images/contacts/phone.png', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
+        {src: '/images/contacts/vkontakte.png', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
+        {src: '/images/contacts/telegram.png', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
     ]
     return(
         <div className="contact-wrapper-mobile">
-            {contacts.map(({src}, index) => (
+            {contacts.map(({src, link}, index) => (
                     <div key={index} className="contact-block-mobile">
-                        <img src={src} alt=""/>
+                        <a href={link}><img src={src} alt=""/></a>
                     </div>
                 )
             )}
