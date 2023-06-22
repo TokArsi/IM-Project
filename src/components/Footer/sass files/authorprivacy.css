@@ -12,7 +12,7 @@
 }
 .author-privacy-wrapper .authors .developers {
   white-space: nowrap;
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -22,7 +22,7 @@
   padding-bottom: 1px;
 }
 .author-privacy-wrapper .authors .designers {
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -34,7 +34,7 @@
   display: flex;
 }
 .author-privacy-wrapper .privacy .year {
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -44,7 +44,7 @@
   padding-right: 10px;
 }
 .author-privacy-wrapper .privacy .privacy-policy {
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -66,7 +66,7 @@
     flex-wrap: wrap;
   }
   .author-privacy-wrapper .authors .developers {
-    font-family: "Proxima Nova", serif;
+    font-family: Proxima Nova, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -76,7 +76,7 @@
     padding-bottom: 1px;
   }
   .author-privacy-wrapper .authors .designers {
-    font-family: "Proxima Nova", serif;
+    font-family: Proxima Nova, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -89,7 +89,7 @@
     flex-wrap: wrap;
   }
   .author-privacy-wrapper .privacy .year {
-    font-family: "Proxima Nova", serif;
+    font-family: Proxima Nova, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -99,7 +99,7 @@
     padding-right: 10px;
   }
   .author-privacy-wrapper .privacy .privacy-policy {
-    font-family: "Proxima Nova", serif;
+    font-family: Proxima Nova, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;

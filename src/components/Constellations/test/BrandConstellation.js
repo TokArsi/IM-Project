@@ -33,7 +33,7 @@ const starData = [
         top: 19.05,
         left: 397.76,
         url: '/images/constallation/stars/brand-management-stars/brand-management.png',
-        title: { top: -10, left: 352.09, text: 'Бренд-менеджер' },
+        title: { top: -25, left: 352.09, text: 'Бренд-менеджер' },
         directions: ['brandManagement'],
         transform: '',
     },

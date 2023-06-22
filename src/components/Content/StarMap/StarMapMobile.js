@@ -10,19 +10,6 @@ const StarMapMobile = () => {
     const [isPlusMinusNavigated, setIsPlusMinusNavigated] = useState(false);
     const [scale, setScale] = useState(100); // Изначальный масштаб 100%
 
-    const fullscreenIconRef = useRef(null);
-
-    const handleScroll = () => {
-        const scrollLeft = Math.round(containerRef.current.scrollLeft);
-        fullscreenIconRef.current.style.left = `${scrollLeft + 20}px`;
-    };
-
-    useEffect(() => {
-        containerRef.current.addEventListener('scroll', handleScroll);
-        return () => {
-        };
-    }, []);
-
     const handleZoomIn = () => {
         if (scale < 200) {
             setScale(prevScale => prevScale + 10); // Увеличение масштаба на 10%
@@ -42,7 +29,6 @@ const StarMapMobile = () => {
              style={{ userSelect: 'none' }}
         >
             <div
-                ref={fullscreenIconRef}
                 className={`plus-minus ${isPlusMinusNavigated ? `navigated` : ``}`}
                  onMouseEnter={() => {setIsPlusMinusNavigated(true)}}
                  onMouseLeave={() => {setIsPlusMinusNavigated(false)}}>

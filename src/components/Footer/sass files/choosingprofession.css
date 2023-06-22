@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 }
 .profession-wrapper .profession-question {
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -15,7 +15,7 @@
   padding-bottom: 10px;
 }
 .profession-wrapper .profession-information {
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;

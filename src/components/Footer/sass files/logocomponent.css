@@ -17,7 +17,7 @@
   flex-direction: column;
 }
 .logo-wrapper .university-info .university-title {
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -25,7 +25,7 @@
   color: #FFFFFF;
 }
 .logo-wrapper .university-info .institute-title {
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -52,7 +52,7 @@
   flex-direction: column;
 }
 .logo-wrapper-mobile .university-info .university-title {
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -60,7 +60,7 @@
   color: #FFFFFF;
 }
 .logo-wrapper-mobile .university-info .institute-title {
-  font-family: "Proxima Nova", serif;
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;

@@ -88,7 +88,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                 top: data.title.top,
                                 left: data.title.left,
                                 color: 'rgba(255, 255, 255, 0.6)',
-                                fontFamily: 'Proxima Nova',
+                                fontFamily: 'Proxima Nova, sans-serif',
                                 width: '24%',
                                 zIndex: -1,
                             }}>{data.title.text}</div>
@@ -112,7 +112,8 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                     left: data.left - 11,
                                     display: 'flex',
                                     justifyContent: 'center',
-                                    alignItems: 'center'
+                                    alignItems: 'center',
+                                    cursor: 'pointer'
                                 }}
                                 >
                                 <img

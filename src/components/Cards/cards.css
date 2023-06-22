@@ -1,8 +1,8 @@
 .card-wrapper {
   position: absolute;
   right: 0;
-  top: 15%;
-  width: 50%;
+  top: 10%;
+  width: 60%;
   height: fit-content;
   z-index: 9999;
   background: rgba(147, 145, 254, 0.15);
@@ -18,6 +18,7 @@
 .card-wrapper .card-contanier .card-close-button {
   align-self: flex-end;
   padding-bottom: 26px;
+  cursor: pointer;
 }
 .card-wrapper .card-contanier .content {
   display: flex;
@@ -25,7 +26,7 @@
   height: fit-content;
 }
 .card-wrapper .card-contanier .content .card-title {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -33,7 +34,7 @@
   color: #FFFFFF;
 }
 .card-wrapper .card-contanier .content .card-task {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -42,7 +43,7 @@
   padding: 30px 0 10px 0;
 }
 .card-wrapper .card-contanier .content .card-description {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -51,7 +52,7 @@
   padding-bottom: 30px;
 }
 .card-wrapper .card-contanier .content .card-salary-title {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -60,7 +61,7 @@
   padding-bottom: 10px;
 }
 .card-wrapper .card-contanier .content .card-salary {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -69,7 +70,7 @@
   padding-bottom: 2px;
 }
 .card-wrapper .card-contanier .content .card-version {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -78,7 +79,7 @@
   padding-bottom: 30px;
 }
 .card-wrapper .card-contanier .content .card-demand-title {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -87,7 +88,7 @@
   padding-bottom: 10px;
 }
 .card-wrapper .card-contanier .content .card-job-vacancy {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -96,7 +97,7 @@
   padding-bottom: 4px;
 }
 .card-wrapper .card-contanier .content .card-programs {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -114,7 +115,7 @@
   padding: 9px 18px 9px 18px;
 }
 .card-wrapper .card-contanier .content .card-link .direction-link a {
-  font-family: "Proxima Nova";
+  font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -144,7 +145,7 @@
 
 @media (max-width: 1537px) {
   .card-wrapper {
-    width: 60%;
+    width: 75%;
     top: 15%;
     border-radius: 40px 0 0 0;
   }
@@ -175,11 +176,11 @@
     padding-bottom: 13px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .card-wrapper {
     width: 85%;
     height: fit-content;
-    top: 15%;
+    top: 10%;
     border-radius: 40px 0 0 0;
   }
   .card-wrapper .card-contanier {
@@ -192,11 +193,11 @@
     padding-bottom: 13px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   .card-wrapper {
-    width: 75%;
+    width: 90%;
     height: fit-content;
-    top: 15%;
+    top: 10%;
     border-radius: 40px 0 0 0;
   }
   .card-wrapper .card-contanier {
@@ -215,20 +216,157 @@
     width: fit-content;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 830px) {
   .card-wrapper {
-    width: 90%;
+    width: 100%;
     height: fit-content;
-    top: 15%;
+    top: 10%;
     border-radius: 40px 0 0 0;
   }
 }
 @media (max-width: 631px) {
   .card-wrapper {
+    position: absolute;
+    right: 0;
+    top: 10%;
     width: 100%;
     height: fit-content;
-    top: 14%;
+    z-index: 9999;
+    background: rgba(147, 145, 254, 0.15);
+    box-shadow: 0px 3.54751px 26.6063px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
     border-radius: 40px 0 0 0;
+  }
+  .card-wrapper .card-contanier {
+    padding: 15px 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-wrapper .card-contanier .card-close-button {
+    align-self: flex-end;
+    padding-bottom: 26px;
+  }
+  .card-wrapper .card-contanier .content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .card-wrapper .card-contanier .content .card-title {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+  .card-wrapper .card-contanier .content .card-task {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 30px 0 10px 0;
+  }
+  .card-wrapper .card-contanier .content .card-description {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 30px;
+  }
+  .card-wrapper .card-contanier .content .card-salary-title {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+  }
+  .card-wrapper .card-contanier .content .card-salary {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 2px;
+  }
+  .card-wrapper .card-contanier .content .card-version {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 30px;
+  }
+  .card-wrapper .card-contanier .content .card-demand-title {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+  }
+  .card-wrapper .card-contanier .content .card-job-vacancy {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 4px;
+  }
+  .card-wrapper .card-contanier .content .card-programs {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+  }
+  .card-wrapper .card-contanier .content .card-link {
+    border: 0.886878px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 10px rgba(64, 137, 227, 0.37));
+    border-radius: 53.2127px;
+    width: fit-content;
+  }
+  .card-wrapper .card-contanier .content .card-link .direction-link {
+    padding: 9px 18px 9px 18px;
+  }
+  .card-wrapper .card-contanier .content .card-link .direction-link a {
+    font-family: Proxima Nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    align-self: center;
+    padding: 9px 10px 9px 13.85px;
+    white-space: nowrap;
+  }
+  .card-wrapper .card-contanier .content .card-link .direction-link img {
+    align-self: center;
+    padding-right: 13.85px;
+  }
+  .card-wrapper .card-contanier .content .card-link.clicked {
+    background: rgba(192, 232, 255, 0.4);
+    border: 0.886878px solid #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(64, 137, 227, 0.37);
+    border-radius: 53.2127px;
+  }
+  .card-wrapper .card-contanier .content .card-link.navigated {
+    background: rgba(192, 232, 255, 0.13);
+    border: 0.886878px solid #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(64, 137, 227, 0.37);
+    border-radius: 53.2127px;
   }
 }
 

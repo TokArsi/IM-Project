@@ -65,7 +65,7 @@ const starData = [
         top: 55.25,
         left: 279.09,
         url: '/images/constallation/stars/marketing-analytic-stars/marketing-analytic.png',
-        title: { top: -12.99, left: 259.04, text: 'Менеджер по дистрибуции и продажам' },
+        title: { top: -30.99, left: 259.04, text: 'Менеджер по дистрибуции и продажам' },
         directions: ['marketing'],
         transform: '',
     },
