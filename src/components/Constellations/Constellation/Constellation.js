@@ -11,7 +11,8 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
         digitalMarketingCommunication,
         promotionMarketingCommunication,
         marketing, isStarActive, setIsStarActive,
-        setStarName
+        setStarName, isStarNavigated,
+        setIsStarNavigated
     } = useContext(DataContext);
 
     const directionObject = {
@@ -103,7 +104,29 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                     return newState;
                                 });
                             }}
-                                className={`${isStarActive[data.id] ? `star-active` : ''}`}
+                                 onMouseEnter={e => {
+                                     setIsStarNavigated(prevState => {
+                                         // Создаем новый объект, где все значения устанавливаются в false
+                                         const newState = Object.keys(prevState).reduce((acc, key) => {
+                                             acc[key] = false;
+                                             return acc;
+                                         }, {});
+                                         newState[data.id] = true;
+                                         return newState;
+                                     });
+                                 }}
+                                 onMouseLeave={e => {
+                                     setIsStarNavigated(prevState => {
+                                         // Создаем новый объект, где все значения устанавливаются в false
+                                         const newState = Object.keys(prevState).reduce((acc, key) => {
+                                             acc[key] = false;
+                                             return acc;
+                                         }, {});
+                                         newState[data.id] = false;
+                                         return newState;
+                                     });
+                                 }}
+                                className={`${isStarActive[data.id] ? `star-active` : isStarNavigated[data.id] ? 'star-navigated' : ''}`}
                                 style={{margin: '0 auto',
                                     position: 'absolute',
                                     width: 46,
@@ -116,8 +139,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                     cursor: 'pointer'
                                 }}
                                 >
-                                <img
-                                    src={data.url}
+                                <img src={data.url}
                                     alt="star"
                                     style={{
                                         zIndex: 9997,

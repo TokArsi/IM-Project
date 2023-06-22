@@ -7,22 +7,21 @@ import Image from "../Constellations/test/Image";
 import AdvertCreativity from "../Constellations/test/AdvertCreativity";
 import DataContext from "../../contexts/DataContext";
 
-const BrandDevelopmentMap = ({scale}) => {
+const BrandDevelopmentMap = () => {
     const {
-        setIsStarActive,
+        setIsStarActive, setIsStarNavigated
     } = useContext(DataContext);
 
     useEffect(() => {
         const objectWithKeys = {};
-        const numberOfKeys = 35; // Измените на нужное количество ключей
-
+        const numberOfKeys = 35;
         for (let i = 1; i <= numberOfKeys; i++) {
             const key = `id${i}`;
             objectWithKeys[key] = false;
         }
         setIsStarActive(objectWithKeys);
+        setIsStarNavigated(objectWithKeys);
     }, []);
-
 
     return (
         <div className="brand-development-map">

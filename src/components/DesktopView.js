@@ -3,7 +3,6 @@ import DataContext from "../contexts/DataContext";
 import Content, {ContentMobile} from "./Content/Content";
 import Header from "./Header/Header";
 import Footer, {FooterMobile} from "./Footer/Footer";
-import {NavBarListMobile} from "./NavBarList/NavBarList";
 import HeaderMobile from "./Header/HeaderMobile";
 
 export const DesktopView = () => {
@@ -13,8 +12,8 @@ export const DesktopView = () => {
     const [brandManagement, setBrandManagement] = useState(false);
     const [marketing, setMarketing] = useState(false);
     const [isStarActive, setIsStarActive] = useState({});
+    const [isStarNavigated, setIsStarNavigated] = useState({});
     const [starName, setStarName] = useState(null);
-    const [isFullscreen, setIsFullscreen] = useState(false);
 
     return (
         <DataContext.Provider
@@ -33,8 +32,7 @@ export const DesktopView = () => {
                 setIsStarActive,
                 starName,
                 setStarName,
-                isFullscreen,
-                setIsFullscreen,
+                isStarNavigated, setIsStarNavigated
             }}
         >
                 <React.Fragment>
@@ -56,7 +54,7 @@ export const MobileView = () => {
     const [marketing, setMarketing] = useState(false);
     const [isStarActive, setIsStarActive] = useState({});
     const [starName, setStarName] = useState(null);
-    const [isFullscreen, setIsFullscreen] = useState(false);
+    const [isStarNavigated, setIsStarNavigated] = useState({});
     return (
         <React.Fragment>
                     <DataContext.Provider value={{
@@ -67,7 +65,7 @@ export const MobileView = () => {
                         setMarketing, setDigitalMarketingCommunication,
                         isStarActive, setIsStarActive,
                         starName, setStarName,
-                        isFullscreen, setIsFullscreen
+                        isStarNavigated, setIsStarNavigated
                     }}>
                         <div className="container">
                             <HeaderMobile/>
