@@ -8,15 +8,15 @@ const starData = [
     {
         top: 38.49,
         left: 58.7,
-        url: '/images/constallation/stars/advert-connect/supervisor-press.png',
-        title: { top: 6.33, left: -7.8, text: 'Руководитель пресс-службы' },
+        url: '/images/constallation/stars/advert-connect/supervisor-press.svg',
+        title: { top: 6.33, left: -11.8, text: 'Руководитель пресс-службы' },
         directions: ['advertPublicCommunications'],
         transform: '',
     },
     {
         top: 37.7,
         left: 146.21,
-        url: '/images/constallation/stars/advert-connect/press-helper.png',
+        url: '/images/constallation/stars/advert-connect/press-helper.svg',
         title: { top: -11.73, left: 136.63, text: 'Пресс-секретарь' },
         directions: ['advertPublicCommunications'],
         transform: '',
@@ -24,7 +24,7 @@ const starData = [
     {
         top: 69.07,
         left: 262.23,
-        url: '/images/constallation/stars/advert-connect/pr-manager.png',
+        url: '/images/constallation/stars/advert-connect/pr-manager.svg',
         title: { top: 65.44, left: 301.02, text: 'PR-менеджер' },
         directions: ['advertPublicCommunications', 'digitalMarketingCommunications'],
         transform: 'matrix(-1, 0.08, -0.08, -1, 0, 0)',
@@ -32,7 +32,7 @@ const starData = [
     {
         top: 157.79,
         left: 306.77,
-        url: '/images/constallation/stars/advert-connect/speech-writer.png',
+        url: '/images/constallation/stars/advert-connect/speech-writer.svg',
         title: { top: 189.78, left: 290.46, text: 'Спичрайтер' },
         directions: ['advertPublicCommunications', 'digitalMarketingCommunications'],
         transform: '',
@@ -40,8 +40,8 @@ const starData = [
     {
         top: 199.78,
         left: 200.44,
-        url: '/images/constallation/stars/promotion/promotion.png',
-        title: { top: 200.78, left: 90, text: 'GR-менеджер' },
+        url: '/images/constallation/stars/promotion/promotion.svg',
+        title: { top: 200.78, left: 113, text: 'GR-менеджер' },
         directions: ['promotionNewBusiness'],
         transform: '',
     },
@@ -54,10 +54,10 @@ const directionType = [
     {advertPublicCommunications: false, digitalMarketingCommunications: false, promotionNewBusiness: true, brandManagement: false, marketing: false},
 ];
 const lineData = [
-    { top: 47.97, left: 69.96,  url: '/images/constallation/Image/line1.png'},
-    { top: 47.97, left: 158.13, url: '/images/constallation/Image/line2.png'},
-    { top: 75.36, left: 276.85, url: '/images/constallation/Image/line3.png'},
-    { top: 170.9, left: 213.64, url: '/images/constallation/Image/line4.png'},
+    { top: 47.97, left: 69.96,  url: '/images/constallation/Image/line1.svg'},
+    { top: 47.97, left: 158.13, url: '/images/constallation/Image/line2.svg'},
+    { top: 75.36, left: 276.85, url: '/images/constallation/Image/line3.svg'},
+    { top: 170.9, left: 213.64, url: '/images/constallation/Image/line4.svg'},
 ];
 
 const constellationBlockSize = {
