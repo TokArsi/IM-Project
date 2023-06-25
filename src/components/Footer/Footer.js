@@ -121,8 +121,8 @@ export const FooterMobile = () => {
                 <div className="container-footer-content-mobile">
                     <div style={{display: 'flex', justifyContent: 'space-between'}}>
                         <div style={{display: 'flex', flexWrap: 'nowrap'}}>
-                            <img style={{paddingRight: 3.97}} width={20} height={20} src="/images/listImages/guulogo.png" alt=""/>
-                            <img width={20} height={20} src="/images/listImages/imlogo.png" alt=""/>
+                            <img style={{paddingRight: 3.97}} width={20} height={20} src="/images/listImages/guulogo.svg" alt=""/>
+                            <img width={20} height={20} src="/images/listImages/imlogo.svg" alt=""/>
                         </div>
                         <ContactComponentMobile/>
                     </div>
