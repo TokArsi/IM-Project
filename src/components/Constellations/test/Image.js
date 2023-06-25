@@ -33,7 +33,7 @@ const starData = [
         top: 157.79,
         left: 306.77,
         url: '/images/constallation/stars/advert-connect/speech-writer.svg',
-        title: { top: 189.78, left: 290.46, text: 'Спичрайтер' },
+        title: { top: 160.78, left: 343.46, text: 'Спичрайтер' },
         directions: ['advertPublicCommunications', 'digitalMarketingCommunications'],
         transform: '',
     },
