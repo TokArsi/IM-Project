@@ -41,7 +41,7 @@ const starData = [
         top: 98.55,
         left: 241.71,
         url: '/images/constallation/stars/advert-connect/advert-strategic.svg',
-        title: {top: 45.91, left: 223.32, text: 'Рекламный стратег'},
+        title: {top: 63.91, left: 213.32, text: 'Рекламный стратег'},
         directions: ['advertPublicCommunications'],
         transform: 'matrix(0.98, -0.19, 0.19, 0.98, 0, 0)',
     },

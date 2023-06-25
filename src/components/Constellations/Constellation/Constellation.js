@@ -90,7 +90,7 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                 left: data.title.left,
                                 color: 'rgba(255, 255, 255, 0.6)',
                                 fontFamily: 'Proxima Nova, sans-serif',
-                                width: '24%',
+                                width: '25%',
                                 zIndex: 9998,
                                 cursor: "pointer",
                                 fontSize: 16,
