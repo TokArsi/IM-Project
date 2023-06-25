@@ -1,6 +1,5 @@
 .contact-wrapper {
   display: flex;
-  flex-direction: column;
   width: fit-content;
   flex-wrap: wrap;
   padding-top: 37px;
@@ -9,6 +8,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 .contact-wrapper .contact-block a {
   font-family: "Proxima Nova", sans-serif;
