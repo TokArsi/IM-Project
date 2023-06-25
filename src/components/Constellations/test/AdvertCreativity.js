@@ -17,7 +17,7 @@ const starData = [
         top: 171.31,
         left: 84.66,
         url: '/images/constallation/stars/advert-connect/smm-manager.svg',
-        title: { top: 150.15, left: -6.48, text: `SMM-менеджер`},
+        title: { top: 175.15, left: -46.48, text: `SMM-менеджер`},
         directions: ['advertPublicCommunications', 'digitalMarketingCommunications'],
         transform: '',
     },
