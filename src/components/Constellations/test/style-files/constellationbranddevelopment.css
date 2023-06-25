@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 111.59px;
-  left: 71px;
+  top: 78.59px;
+  left: 60px;
 }
 .brand-development-constellation .title {
   font-family: Proxima Nova, sans-serif;
@@ -19,10 +19,10 @@
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 16px;
   color: #FFFFFF;
-  padding-bottom: 32.94px;
+  padding-bottom: 32px;
   opacity: 60%;
 }
 

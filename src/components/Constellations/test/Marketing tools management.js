@@ -1,8 +1,7 @@
 import Constellation from "../Constellation/Constellation";
-import React, {useContext, useEffect} from "react";
+import React from "react";
 import './style-files/marketingtoolsmanagement.scss'
 import nextId from "react-id-generator";
-import DataContext from "../../../contexts/DataContext";
 
 const starData = [
     {

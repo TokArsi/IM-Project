@@ -1,7 +1,7 @@
 .advert-creative-constellation {
   position: absolute;
-  top: 351.39px;
-  left: 524.94px;
+  top: 381.39px;
+  left: 650.94px;
 }
 .advert-creative-constellation .title {
   font-family: Proxima Nova, sans-serif;
@@ -11,6 +11,7 @@
   line-height: 19px;
   color: #FFFFFF;
   padding-bottom: 5px;
+  padding-top: 17px;
   padding-left: 57.06px;
   opacity: 100%;
 }
@@ -18,7 +19,7 @@
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 16px;
   color: #FFFFFF;
   padding-left: 57.06px;

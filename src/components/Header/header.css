@@ -5,7 +5,7 @@
 .header .header-information {
   display: flex;
   flex-direction: column;
-  padding-right: 61px;
+  padding-right: 90px;
   height: fit-content;
 }
 .header .header-information .header-title {

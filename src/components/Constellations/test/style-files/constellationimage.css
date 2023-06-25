@@ -1,7 +1,7 @@
 .image-constellation {
   position: absolute;
   top: 392.95px;
-  left: 73.56px;
+  left: 60px;
 }
 .image-constellation .title {
   font-family: Proxima Nova, sans-serif;
@@ -11,14 +11,14 @@
   line-height: 19px;
   color: #FFFFFF;
   padding-bottom: 5px;
-  padding-top: 29.96px;
+  padding-top: 32px;
   opacity: 100%;
 }
 .image-constellation .sub-title {
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 16px;
   color: #FFFFFF;
   opacity: 60%;
