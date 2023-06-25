@@ -6,9 +6,9 @@ import './sass files/authorprivacy.scss'
 import './sass files/choosingprofession.scss'
 export const ContactComponent = () => {
     const contacts = [
-        {src: '/images/contacts/phone.svg', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
-        {src: '/images/contacts/vkontakte.svg', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
-        {src: '/images/contacts/telegram.svg', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
+        {src: '/images/contacts/phone2.svg', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
+        {src: '/images/contacts/vkontakte2.svg', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
+        {src: '/images/contacts/telegram2.svg', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
     ]
   return(
       <div className="contact-wrapper">
@@ -24,9 +24,9 @@ export const ContactComponent = () => {
 }
 export const ContactComponentMobile = () => {
     const contacts = [
-        {src: '/images/contacts/phone.svg', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
-        {src: '/images/contacts/vkontakte.svg', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
-        {src: '/images/contacts/telegram.svg', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
+        {src: '/images/contacts/phone2.svg', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
+        {src: '/images/contacts/vkontakte2.svg', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
+        {src: '/images/contacts/telegram2.svg', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
     ]
     return(
         <div className="contact-wrapper-mobile">
@@ -43,8 +43,8 @@ export const LogoComponent = () => {
     return(
         <div className="logo-wrapper">
             <div className="logos">
-                <img src="/images/listImages/guulogo.png" alt=""/>
-                <img src="/images/listImages/imlogo.png" alt=""/>
+                <img src="/images/listImages/guulogo.svg" alt=""/>
+                <img src="/images/listImages/imlogo.svg" alt=""/>
             </div>
             <div className="university-info">
                 <div className={`university-title`}>Государственный университет управления</div>
@@ -109,9 +109,8 @@ const Footer = () => {
         <div className="footer">
             <div className="container-footer-content">
                 <LogoComponent/>
-                <AuthorPrivacyComponent/>
-                <ChoosingProfession/>
                 <ContactComponent/>
+                <AuthorPrivacyComponent/>
             </div>
         </div>
     )
@@ -128,7 +127,6 @@ export const FooterMobile = () => {
                         <ContactComponentMobile/>
                     </div>
                     <div className={`choosing-privacy`}>
-                        <ChoosingProfession/>
                         <AuthorPrivacyComponent/>
                     </div>
                 </div>

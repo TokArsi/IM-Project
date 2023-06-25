@@ -91,8 +91,23 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                 color: 'rgba(255, 255, 255, 0.6)',
                                 fontFamily: 'Proxima Nova, sans-serif',
                                 width: '24%',
-                                zIndex: -1,
-                            }}>{data.title.text}</div>
+                                zIndex: 9998,
+                                cursor: "pointer",
+                                fontSize: 16,
+                                opacity: 100
+                            }}
+                                 onClick={e => {
+                                     setIsStarActive(prevState => {
+                                         // Создаем новый объект, где все значения устанавливаются в false
+                                         const newState = Object.keys(prevState).reduce((acc, key) => {
+                                             acc[key] = false;
+                                             return acc;
+                                         }, {});
+                                         newState[data.id] = !prevState[data.id];
+                                         return newState;
+                                     });
+                                 }}
+                            >{data.title.text}</div>
                             <div onClick={e => {
                                 setIsStarActive(prevState => {
                                     // Создаем новый объект, где все значения устанавливаются в false
@@ -136,7 +151,8 @@ const Constellation = ({ starData, constellationBlockSize, lineData, directionTy
                                     display: 'flex',
                                     justifyContent: 'center',
                                     alignItems: 'center',
-                                    cursor: 'pointer'
+                                    cursor: 'pointer',
+                                    zIndex: 9999
                                 }}
                                 >
                                 <img src={data.url}

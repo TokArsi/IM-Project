@@ -1,6 +1,6 @@
 .logo-wrapper{
   display: flex;
-  padding-top: 32px;
+  padding-top: 37px;
   width: fit-content;
   flex-wrap: wrap;
   .logos{
@@ -29,6 +29,7 @@
       font-size: 18px;
       line-height: 22px;
       color: rgba(255, 255, 255, 0.8);
+      opacity: 90%;
     }
   }
 }

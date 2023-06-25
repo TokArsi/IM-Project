@@ -6,13 +6,13 @@
   padding-bottom: 20px;
 }
 .footer .container-footer-content {
-  padding: 0 200px;
+  padding: 0 69px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .footer .container-footer-content-mobile {
-  padding: 32px 200px 0 200px;
+  padding: 32px 69px 0 69px;
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +22,7 @@
 }
 @media (max-width: 1000px) {
   .footer .container-footer-content-mobile {
-    padding: 32px 100px 0 100px;
+    padding: 32px 49px 0 49px;
     display: flex;
     flex-direction: column;
   }

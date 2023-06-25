@@ -1,6 +1,6 @@
 .header{
   display: flex;
-  padding-bottom: 65px;
+  padding-bottom: 52px;
   .header-information{
     display: flex;
     flex-direction: column;
@@ -10,47 +10,53 @@
         color: #FFFFFF;
         font-family: Proxima Nova, sans-serif;
         font-size: 42px;
-        font-weight: 800;
+        font-weight: 900;
         line-height: 51px;
         letter-spacing: 0;
         text-align: left;
+        padding-bottom: 25px;
+        opacity: 100%;
     }
     .header-note{
       max-width: fit-content;
-      font-family: 'Gilroy', serif;
+      font-family: Proxima Nova, sans-serif;
       font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
+      font-weight: 300;
+      font-size: 18px;
       line-height: 130%;
       color: rgba(255, 255, 255, 0.6);
+      opacity: 60%;
     }
   }
 }
 .header-mobile{
   display: flex;
   flex-direction: column;
-  padding-bottom: 65px;
+  padding-bottom: 52px;
   .header-information-mobile{
     display: flex;
     flex-direction: column;
     height: fit-content;
     .header-title-mobile{
       color: #FFFFFF;
-      font-family: Proxima Nova, sans-serif;;
+      font-family: Proxima Nova, sans-serif;
       font-size: 42px;
-      font-weight: 800;
+      font-weight: 900;
       line-height: 51px;
       letter-spacing: 0;
       text-align: left;
+      padding-bottom: 25px;
+      opacity: 100%;
     }
     .header-note-mobile{
       max-width: fit-content;
-      font-family: 'Gilroy', serif;
+      font-family: Proxima Nova, sans-serif;
       font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
+      font-weight: 300;
+      font-size: 18px;
       line-height: 130%;
       color: rgba(255, 255, 255, 0.6);
+      opacity: 60%;
     }
   }
 }

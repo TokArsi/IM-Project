@@ -1,7 +1,7 @@
 .author-privacy-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 36px;
+  padding-top: 37px;
   width: fit-content;
   flex-wrap: wrap;
 }
@@ -18,8 +18,8 @@
   font-size: 12px;
   line-height: 15px;
   color: #FFFFFF;
-  opacity: 0.6;
   padding-bottom: 1px;
+  opacity: 60%;
 }
 .author-privacy-wrapper .authors .designers {
   font-family: Proxima Nova, sans-serif;
@@ -57,7 +57,7 @@
 @media (max-width: 900px) and (min-width: 390px) {
   .author-privacy-wrapper {
     display: flex;
-    padding-top: 29px;
+    padding-top: 37px;
     width: fit-content;
     flex-wrap: wrap;
   }

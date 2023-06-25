@@ -11,56 +11,56 @@ body {
 @media (max-width: 1710px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 1710px auto;
+    background-size: 1710px 2000px;
   }
 }
 @media (max-width: 1536px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 1536px 1303px;
+    background-size: 1536px 2000px;
   }
 }
 @media (max-width: 1400px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 1400px 1500px;
+    background-size: 1400px 2000px;
   }
 }
 @media (max-width: 1250px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 1250px 1600px;
+    background-size: 1250px 2000px;
   }
 }
 
   @media (max-width: 1250px) {
     body {
       background-image: url('../public/images/фон2.png');
-      background-size: 1250px 1600px;
+      background-size: 1250px 2000px;
     }
   }
 @media (max-width: 900px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 900px 1600px;
+    background-size: 900px 2000px;
   }
 }
 @media (max-width: 800px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 800px 1600px;
+    background-size: 800px 2000px;
   }
 }
 @media (max-width: 700px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 700px 1600px;
+    background-size: 700px 2000px;
   }
 }
 @media (max-width: 600px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 600px 1800px;
+    background-size: 600px 2000px;
   }
 }
 @media (max-width: 400px) {

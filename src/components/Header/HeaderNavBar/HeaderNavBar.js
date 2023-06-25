@@ -9,6 +9,7 @@ const HeaderNavBar = () => {
                 <div className="header-navbar-block-title">
                     Программы бакалавриата Института маркетинга
                 </div>
+                <div className="header-subtitle">Нажмите на программу для просмотра соответствия на карте</div>
                 <div className="header-navbar-list">
                     <NavBarList/>
                 </div>
