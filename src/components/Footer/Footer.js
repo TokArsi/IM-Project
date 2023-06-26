@@ -6,15 +6,15 @@ import './sass files/authorprivacy.scss'
 import './sass files/choosingprofession.scss'
 export const ContactComponent = () => {
     const contacts = [
-        {src: '/images/contacts/phone2.svg', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
-        {src: '/images/contacts/vkontakte2.svg', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
-        {src: '/images/contacts/telegram2.svg', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
+        {src: '/images/contacts/phone.svg', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
+        {src: '/images/contacts/vkontakte.svg', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
+        {src: '/images/contacts/telegram.svg', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
     ]
   return(
       <div className="contact-wrapper">
           {contacts.map(({src, text, link}, index) => (
               <div key={index} className="contact-block">
-                  <img src={src} alt=""/>
+                  <img width={18} height={18} src={src} alt=""/>
                   <a target='_blank' href={link}>{text}</a>
               </div>
               )
@@ -24,15 +24,15 @@ export const ContactComponent = () => {
 }
 export const ContactComponentMobile = () => {
     const contacts = [
-        {src: '/images/contacts/phone2.svg', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
-        {src: '/images/contacts/vkontakte2.svg', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
-        {src: '/images/contacts/telegram2.svg', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
+        {src: '/images/contacts/phone.svg', text: '+7 (495) 371-57-66', link: 'https://web.whatsapp.com'},
+        {src: '/images/contacts/vkontakte.svg', text: 'Мы ВКонтакте',  link: 'https://vk.com/sum_marketing'},
+        {src: '/images/contacts/telegram.svg', text: 'Мы в Телеграм', link: 'https://t.me/tamvim'},
     ]
     return(
         <div className="contact-wrapper-mobile">
             {contacts.map(({src, link}, index) => (
                     <div key={index} className="contact-block-mobile">
-                        <a href={link}><img src={src} alt=""/></a>
+                        <a href={link}><img width={18} height={18} src={src} alt=""/></a>
                     </div>
                 )
             )}
