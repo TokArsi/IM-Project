@@ -463,7 +463,7 @@ const Card = ({name, setIsStarActive}) => {
                     >
                         <div className="direction-link">
                             <a href={object.link} target={"_blank"}
-                               onClick={() => setIsClicked(true)}>Пройти</a>
+                               onClick={() => setIsClicked(true)}>Пeрейти</a>
                             <img src="/images/contacts/arrow.png" alt=""/>
                         </div>
                     </div>
