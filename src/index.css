@@ -60,13 +60,13 @@ body {
 @media (max-width: 600px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 600px 2000px;
+    background-size: 600px 2100px;
   }
 }
 @media (max-width: 400px) {
   body {
     background-image: url('../public/images/фон2.png');
-    background-size: 400px 2000px;
+    background-size: 400px 2200px;
   }
 }
 
