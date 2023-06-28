@@ -86,7 +86,10 @@ export const AuthorPrivacyComponent = () => {
       <div className="author-privacy-wrapper">
           <div className="authors">
               <div className="developers">
-                  Разработано: Анастасия Тукмакова, Нурия Ситдикова, Токтогонов Арсен, Исмайлова Алина
+                  Разработано: Анастасия Тукмакова, Нурия Ситдикова
+              </div>
+              <div className="developers">
+                  Реализовано: Токтогонов Арсен, Исмайлова Алина
               </div>
               <div className="designers">
                   Оформлено: Светлана Кулакова
