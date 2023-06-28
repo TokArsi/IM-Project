@@ -11,7 +11,7 @@
   padding-bottom: 10px;
 }
 .author-privacy-wrapper .authors .developers {
-  white-space: nowrap;
+  white-space: pre-wrap;
   font-family: Proxima Nova, sans-serif;
   font-style: normal;
   font-weight: 300;
